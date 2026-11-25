@@ -14,17 +14,17 @@ import AuthModal from '@/components/AuthModal';
 import CheckoutModal from '@/components/CheckoutModal';
 import OrderSuccessModal from '@/components/OrderSuccessModal';
 import PolicyModal from '@/components/PolicyModal';
-import { 
-  ChevronRight, 
-  MapPin, 
-  Phone, 
-  Mail, 
-  Clock, 
-  MessageCircle, 
-  Send, 
-  CheckCircle2, 
-  ShieldCheck, 
-  HelpCircle, 
+import {
+  ChevronRight,
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  MessageCircle,
+  Send,
+  CheckCircle2,
+  ShieldCheck,
+  HelpCircle,
   ChevronDown,
   Sparkles,
   Building
@@ -45,7 +45,7 @@ function ContactContent() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.message) return;
-    
+
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);
@@ -78,7 +78,7 @@ function ContactContent() {
     },
     {
       q: 'পাইকারি বা কর্পোরেট অর্ডারের সুযোগ আছে কি?',
-      a: 'হ্যাঁ, বিভিন্ন অফিস, প্রতিষ্ঠান ও রিসেলারদের জন্য আমাদের বিশেষ কর্পোরেট প্যাকেজ রয়েছে। সরাসরি আমাদের হটলাইনে (01700-123456) কল করে পাইকারি মূল্যের বিষয়ে কথা বলতে পারেন।'
+      a: 'হ্যাঁ, বিভিন্ন অফিস, প্রতিষ্ঠান ও রিসেলারদের জন্য আমাদের বিশেষ কর্পোরেট প্যাকেজ রয়েছে। সরাসরি আমাদের হটলাইনে (01312617206) কল করে পাইকারি মূল্যের বিষয়ে কথা বলতে পারেন।'
     }
   ];
 
@@ -87,7 +87,7 @@ function ContactContent() {
       <Navbar />
 
       <main className="flex-1 pb-16">
-        
+
         {/* Header Banner */}
         <section className="bg-gradient-to-r from-[#244C32] via-[#1A3824] to-[#2E5F3F] text-white py-12 px-4 sm:px-6 lg:px-8 border-b-4 border-[#E5B83F]">
           <div className="max-w-7xl mx-auto">
@@ -116,7 +116,7 @@ function ContactContent() {
         {/* 4 Direct Contact Channel Cards */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 -mt-6 relative z-10">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            
+
             {/* Hotline Card */}
             <div className="bg-white rounded-3xl p-6 border border-[#244C32]/10 shadow-lg hover:shadow-xl transition-all flex flex-col justify-between group">
               <div>
@@ -126,16 +126,16 @@ function ContactContent() {
                 <h3 className="font-extrabold text-base text-[#244C32]">সরাসরি হটলাইন কল</h3>
                 <p className="text-xs text-gray-500 mt-1">প্রতিদিন সকাল ৯টা - রাত ১০টা</p>
                 <div className="mt-3 space-y-1">
-                  <a href="tel:+8801700123456" className="block text-sm font-extrabold text-[#244C32] hover:text-[#8B6E1A]">
+                  <a href="tel:+8801312617206" className="block text-sm font-extrabold text-[#244C32] hover:text-[#8B6E1A]">
                     +880 1700-123456
                   </a>
-                  <a href="tel:+8801800654321" className="block text-xs font-bold text-gray-600 hover:text-[#244C32]">
-                    +880 1800-654321
+                  <a href="tel:+8801312617206" className="block text-xs font-bold text-gray-600 hover:text-[#244C32]">
+                    +880 1312-617206
                   </a>
                 </div>
               </div>
-              <a 
-                href="tel:+8801700123456"
+              <a
+                href="tel:+8801312617206"
                 className="mt-4 text-xs font-bold text-[#8B6E1A] hover:underline flex items-center gap-1"
               >
                 <span>এখনই কল করুন</span>
@@ -156,8 +156,8 @@ function ContactContent() {
                   <span className="text-xs text-gray-500">অনলাইন আছেন</span>
                 </div>
               </div>
-              <a 
-                href="https://wa.me/8801700123456?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%2C%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%95%E0%A6%BF%E0%A6%9B%E0%A7%81%20%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87"
+              <a
+                href="https://wa.me/8801312617206?text=%E0%A6%B9%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%B2%E0%A7%8B%20%E0%A6%97%E0%A7%8D%E0%A6%B0%E0%A6%BE%E0%A6%AE%E0%A6%AC%E0%A6%BE%E0%A6%82%E0%A6%B2%E0%A6%BE%2C%20%E0%A6%86%E0%A6%AE%E0%A6%BF%20%E0%A6%95%E0%A6%BF%E0%A6%9B%E0%A7%81%20%E0%A6%A4%E0%A6%A5%E0%A7%8D%E0%A6%AF%20%E0%A6%9C%E0%A6%BE%E0%A6%A8%E0%A6%A4%E0%A7%87%20%E0%A6%9A%E0%A6%BE%E0%A6%87"
                 target="_blank"
                 rel="noreferrer"
                 className="mt-4 text-xs font-bold text-emerald-700 hover:underline flex items-center gap-1"
@@ -184,7 +184,7 @@ function ContactContent() {
                   </a>
                 </div>
               </div>
-              <a 
+              <a
                 href="mailto:support@grambangla.com"
                 className="mt-4 text-xs font-bold text-[#8B6E1A] hover:underline flex items-center gap-1"
               >
@@ -216,7 +216,7 @@ function ContactContent() {
         {/* Main Content: Form & Map Grid */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-            
+
             {/* Left: Contact Form (7 cols) */}
             <div className="lg:col-span-7 bg-white rounded-3xl p-6 sm:p-10 border border-[#244C32]/10 shadow-xs">
               <div className="mb-6">
@@ -333,7 +333,7 @@ function ContactContent() {
 
             {/* Right: Map & Office Info (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
-              
+
               {/* Map Container */}
               <div className="bg-white rounded-3xl p-5 border border-[#244C32]/10 shadow-xs space-y-3">
                 <div className="flex items-center justify-between">
@@ -372,7 +372,7 @@ function ContactContent() {
                   আমাদের কাছে গ্রাহকের স্বাস্থ্য ও বিশ্বাস সবার আগে। পণ্যের গুণমান ও বিশুদ্ধতা নিশ্চিত করতে আমরা প্রতিনিয়ত কাজ করছি।
                 </p>
                 <div className="pt-2 flex items-center justify-between text-[11px] text-[#E5B83F] border-t border-white/10">
-                  <span>হটলাইন: 01700-123456</span>
+                  <span>হটলাইন: 01312617206</span>
                   <span>সারা দেশে হোম ডেলিভারি</span>
                 </div>
               </div>

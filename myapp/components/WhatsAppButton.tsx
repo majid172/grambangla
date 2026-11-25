@@ -12,7 +12,7 @@ export default function WhatsAppButton() {
     e.preventDefault();
     trackContact('whatsapp', 'floating_widget');
     const encoded = encodeURIComponent(message || 'হ্যালো গ্রামবাংলা, আমি কিছু তথ্য জানতে চাচ্ছি।');
-    window.open(`https://wa.me/8801700123456?text=${encoded}`, '_blank');
+    window.open(`https://wa.me/8801312617206?text=${encoded}`, '_blank');
     setMessage('');
     setIsOpen(false);
   };

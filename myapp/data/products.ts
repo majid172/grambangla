@@ -203,14 +203,14 @@ export const PRODUCTS: Product[] = [
   {
     id: 'gb-4',
     slug: 'traditional-mustard-oil-2l',
-    nameBn: 'ঘানিভাঙা সরিষার তেল (ফ্যামিলি প্যাক) – ২ লিটার',
+    nameBn: ' সরিষার তেল (ফ্যামিলি প্যাক) – ২ লিটার',
     nameEn: 'Pure Mustard Oil Family Can – 2L',
     category: 'mustard-oil',
     categoryNameBn: 'ঘানিভাঙা সরিষার তেল',
     shortDescBn: 'পুরো পরিবারের স্বাস্থ্যকর রান্নার জন্য উপযুক্ত ২ লিটার সাশ্রয়ী ক্যান। আসল মাঘী সরিষার প্রাকৃতিক ঝাঁঝ।',
     fullDescBn: 'পরিবারের প্রতিদিনের রান্নাকে স্বাস্থ্যকর রাখতে বিশেষ ২ লিটার ফুডগ্রেড ক্যান। সিরাজগঞ্জের শতভাগ খাঁটি সরিষা থেকে প্রস্তুত। ইলিশ ভাজি, শুঁটকি ভুনা কিংবা যে কোনো ঝাল তরকারিতে এনে দেয় বাংলার ঐতিহ্যবাহী স্বাদ।',
-    price: 700,
-    originalPrice: 820,
+    price: 240,
+    originalPrice: 260,
     discountPercent: 15,
     unit: '২ লিটার ফুডগ্রেড ক্যান',
     inStock: true,
@@ -220,9 +220,9 @@ export const PRODUCTS: Product[] = [
     featured: true,
     isBestseller: true,
     organicCertified: true,
-    image: 'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80',
+    image: 'https://img.drz.lazcdn.com/static/bd/p/67c4d474025bf49fb566d8fe914bb543.jpg_720x720q80.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80'
+      'https://img.drz.lazcdn.com/static/bd/p/67c4d474025bf49fb566d8fe914bb543.jpg_720x720q80.jpg'
     ],
     badge: 'ফ্যামিলি সেভার',
     sourceLocation: 'তাড়াশ ও উল্লাপাড়া, সিরাজগঞ্জ',

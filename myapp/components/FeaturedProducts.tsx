@@ -3,10 +3,10 @@
 import React, { useState, useMemo } from 'react';
 import { PRODUCTS } from '@/data/products';
 import ProductCard from './ProductCard';
-import { 
-  Search, 
-  SlidersHorizontal, 
-  Sparkles, 
+import {
+  Search,
+  SlidersHorizontal,
+  Sparkles,
   X,
   PhoneCall
 } from 'lucide-react';
@@ -33,11 +33,11 @@ export default function FeaturedProducts({ selectedCategory, onSelectCategory }:
   const filteredProducts = useMemo(() => {
     return PRODUCTS.filter((product) => {
       const matchesCategory = selectedCategory === 'all' || product.category === selectedCategory;
-      
+
       const q = searchQuery.toLowerCase().trim();
-      const matchesSearch = !q || 
-        product.nameBn.toLowerCase().includes(q) || 
-        product.nameEn.toLowerCase().includes(q) || 
+      const matchesSearch = !q ||
+        product.nameBn.toLowerCase().includes(q) ||
+        product.nameEn.toLowerCase().includes(q) ||
         product.shortDescBn.toLowerCase().includes(q) ||
         product.sourceLocation.toLowerCase().includes(q);
 
@@ -53,7 +53,7 @@ export default function FeaturedProducts({ selectedCategory, onSelectCategory }:
   return (
     <section id="shop" className="py-20 bg-[#FAF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Heading & Support Callout */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
           <div>
@@ -76,8 +76,8 @@ export default function FeaturedProducts({ selectedCategory, onSelectCategory }:
             </div>
             <div>
               <div className="text-[11px] text-gray-500 font-medium">যেকোনো প্রশ্ন বা ফোনে অর্ডারে:</div>
-              <a href="tel:+8801700123456" className="text-sm font-extrabold text-[#244C32] hover:text-[#8B6E1A]">
-                01700-123456 (হটলাইন)
+              <a href="tel:+8801312617206" className="text-sm font-extrabold text-[#244C32] hover:text-[#8B6E1A]">
+                01312617206 (হটলাইন)
               </a>
             </div>
           </div>
@@ -85,10 +85,10 @@ export default function FeaturedProducts({ selectedCategory, onSelectCategory }:
 
         {/* Filter & Search Bar */}
         <div className="bg-white rounded-3xl p-4 sm:p-5 shadow-xs border border-[#244C32]/10 mb-8 space-y-4">
-          
+
           {/* Top Row: Search & Sort */}
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
-            
+
             {/* Search Input */}
             <div className="relative w-full sm:w-96">
               <Search className="absolute left-3.5 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
@@ -137,11 +137,10 @@ export default function FeaturedProducts({ selectedCategory, onSelectCategory }:
                 <button
                   key={tab.slug}
                   onClick={() => onSelectCategory(tab.slug)}
-                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all duration-300 ${
-                    active
-                      ? 'bg-[#244C32] text-[#FAF8F0] shadow-md scale-102'
-                      : 'bg-[#FAF8F0] hover:bg-[#244C32]/10 text-gray-700'
-                  }`}
+                  className={`px-4 py-2 rounded-xl text-xs sm:text-sm font-bold whitespace-nowrap transition-all duration-300 ${active
+                    ? 'bg-[#244C32] text-[#FAF8F0] shadow-md scale-102'
+                    : 'bg-[#FAF8F0] hover:bg-[#244C32]/10 text-gray-700'
+                    }`}
                 >
                   {tab.label}
                 </button>

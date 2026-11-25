@@ -1,11 +1,11 @@
 'use client';
 
 import React from 'react';
-import { 
-  ShoppingBag, 
-  ArrowRight, 
-  PhoneCall, 
-  Sparkles, 
+import {
+  ShoppingBag,
+  ArrowRight,
+  PhoneCall,
+  Sparkles,
   CheckCircle,
   Leaf,
   Clock,
@@ -15,17 +15,17 @@ import {
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF8F0] via-[#FAF7EE] to-[#F3EEE0] pt-6 pb-16 lg:pt-14 lg:pb-24 border-b border-[#244C32]/10">
-      
+
       {/* Subtle Warm Decorative Sunlight Radial */}
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#E5B83F]/15 rounded-full blur-3xl pointer-events-none -mr-32 -mt-32"></div>
       <div className="absolute bottom-0 left-0 w-[450px] h-[450px] bg-[#244C32]/8 rounded-full blur-3xl pointer-events-none -ml-32 -mb-32"></div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
-          
+
           {/* Left Column - Copy & Trust Elements */}
           <div className="lg:col-span-7 space-y-6 text-center lg:text-left">
-            
+
             {/* Fresh Batch Ticker Badge */}
             <div className="inline-flex flex-wrap items-center justify-center lg:justify-start gap-2 bg-[#244C32]/10 border border-[#244C32]/20 text-[#244C32] px-4 py-2 rounded-full text-xs sm:text-sm font-bold shadow-xs">
               <span className="flex items-center gap-1.5 text-emerald-800">
@@ -91,11 +91,11 @@ export default function Hero() {
               </a>
 
               <a
-                href="tel:+8801700123456"
+                href="tel:+8801312617206"
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-white hover:bg-gray-50 text-[#244C32] border-2 border-[#244C32]/20 hover:border-[#244C32] px-6 py-3.5 rounded-2xl text-sm font-bold shadow-sm transition-colors"
               >
                 <PhoneCall className="w-4 h-4 text-[#E5B83F]" />
-                <span>ফোনে সরাসরি অর্ডার (01700-123456)</span>
+                <span>ফোনে সরাসরি অর্ডার (01312617206)</span>
               </a>
             </div>
 
@@ -117,7 +117,7 @@ export default function Hero() {
           {/* Right Column - Authentic Product Visual Showcase */}
           <div className="lg:col-span-5 relative">
             <div className="relative mx-auto max-w-md lg:max-w-none">
-              
+
               {/* Warm Amber Backing */}
               <div className="absolute inset-0 bg-gradient-to-tr from-[#E5B83F]/30 via-[#244C32]/20 to-transparent rounded-3xl transform rotate-2 scale-103 filter blur-sm"></div>
 
@@ -129,7 +129,7 @@ export default function Hero() {
                     alt="গ্রামবাংলা খাঁটি সরিষার তেল ও গ্রামীণ ঐতিহ্য"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
-                  
+
                   {/* Subtle Natural Shadow Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-black/20 to-transparent"></div>
 
@@ -147,7 +147,7 @@ export default function Hero() {
                     <h3 className="text-xl sm:text-2xl font-black leading-tight">
                       আসল সরিষার ঝাঁঝ ও মাটির হাঁড়ির গাওয়া ঘি
                     </h3>
-                    
+
                     <p className="text-xs text-gray-200 mt-1 line-clamp-1">
                       পাবনা, সিরাজগঞ্জ ও সুন্দরবনের খাঁটি স্বাদে সাজিয়ে নিন আপনার রান্নাঘর
                     </p>

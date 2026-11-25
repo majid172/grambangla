@@ -3,29 +3,29 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
-import { 
-  Search, 
-  ShoppingBag, 
-  Heart, 
-  User, 
-  Menu, 
-  X, 
-  PhoneCall, 
-  Truck, 
-  ShieldCheck, 
-  Leaf, 
+import {
+  Search,
+  ShoppingBag,
+  Heart,
+  User,
+  Menu,
+  X,
+  PhoneCall,
+  Truck,
+  ShieldCheck,
+  Leaf,
   Sparkles,
   ChevronRight
 } from 'lucide-react';
 
 export default function Navbar() {
-  const { 
-    cartCount, 
-    wishlistCount, 
-    setIsCartOpen, 
-    setIsWishlistOpen, 
-    setIsSearchOpen, 
-    setIsAuthOpen 
+  const {
+    cartCount,
+    wishlistCount,
+    setIsCartOpen,
+    setIsWishlistOpen,
+    setIsSearchOpen,
+    setIsAuthOpen
   } = useCart();
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -67,23 +67,22 @@ export default function Navbar() {
             <span className="flex items-center gap-1.5 hover:text-[#E5B83F] transition-colors">
               <ShieldCheck className="w-3.5 h-3.5 text-[#E5B83F]" /> ১০০% খাঁটি পণ্যের নিশ্চয়তা
             </span>
-            <a 
-              href="tel:+8801700123456" 
+            <a
+              href="tel:+8801312617206"
               className="flex items-center gap-1.5 font-semibold text-[#E5B83F] hover:underline"
             >
-              <PhoneCall className="w-3.5 h-3.5" /> 01700-123456
+              <PhoneCall className="w-3.5 h-3.5" /> 01312617206
             </a>
           </div>
         </div>
       </div>
 
       {/* Main Navbar */}
-      <nav 
-        className={`w-full transition-all duration-300 ${
-          isScrolled 
-            ? 'bg-[#FAF8F0]/95 backdrop-blur-md shadow-md py-3 border-b border-[#244C32]/10' 
-            : 'bg-[#FAF8F0] py-4 border-b border-[#244C32]/5'
-        }`}
+      <nav
+        className={`w-full transition-all duration-300 ${isScrolled
+          ? 'bg-[#FAF8F0]/95 backdrop-blur-md shadow-md py-3 border-b border-[#244C32]/10'
+          : 'bg-[#FAF8F0] py-4 border-b border-[#244C32]/5'
+          }`}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
@@ -219,7 +218,7 @@ export default function Navbar() {
                 <ChevronRight className="w-4 h-4 text-[#E5B83F]" />
               </Link>
               <div className="text-center text-xs text-gray-500">
-                জরুরি প্রয়োজনে কল করুন: <a href="tel:+8801700123456" className="text-[#244C32] font-bold">01700-123456</a>
+                জরুরি প্রয়োজনে কল করুন: <a href="tel:+8801312617206" className="text-[#244C32] font-bold">01312617206</a>
               </div>
             </div>
           </div>

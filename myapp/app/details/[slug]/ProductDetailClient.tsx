@@ -17,26 +17,26 @@ import AuthModal from '@/components/AuthModal';
 import CheckoutModal from '@/components/CheckoutModal';
 import OrderSuccessModal from '@/components/OrderSuccessModal';
 import PolicyModal from '@/components/PolicyModal';
-import { 
-  ChevronRight, 
-  Star, 
-  ShoppingBag, 
+import {
+  ChevronRight,
+  Star,
+  ShoppingBag,
   ArrowRight,
-  Zap, 
-  Heart, 
-  MapPin, 
-  Check, 
-  ShieldCheck, 
-  Truck, 
-  RotateCcw, 
-  PhoneCall, 
-  MessageCircle, 
-  Plus, 
-  Minus, 
-  Sparkles, 
-  FileText, 
-  Activity, 
-  UserCheck, 
+  Zap,
+  Heart,
+  MapPin,
+  Check,
+  ShieldCheck,
+  Truck,
+  RotateCcw,
+  PhoneCall,
+  MessageCircle,
+  Plus,
+  Minus,
+  Sparkles,
+  FileText,
+  Activity,
+  UserCheck,
   Share2,
   Clock,
   Leaf
@@ -48,12 +48,12 @@ interface ProductDetailClientProps {
 }
 
 function ProductDetailContent({ product, relatedProducts }: ProductDetailClientProps) {
-  const { 
-    addToCart, 
-    toggleWishlist, 
-    isInWishlist, 
+  const {
+    addToCart,
+    toggleWishlist,
+    isInWishlist,
     setIsCheckoutOpen,
-    showToast 
+    showToast
   } = useCart();
 
   const [activeImageIdx, setActiveImageIdx] = useState(0);
@@ -90,7 +90,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
     const text = encodeURIComponent(
       `হ্যালো গ্রামবাংলা, আমি "${product.nameBn}" (${product.unit}) ${quantity}টি অর্ডার করতে চাই। মূল্য: ৳${product.price * quantity}।`
     );
-    window.open(`https://wa.me/8801700123456?text=${text}`, '_blank');
+    window.open(`https://wa.me/8801312617206?text=${text}`, '_blank');
   };
 
   return (
@@ -98,7 +98,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
       <Navbar />
 
       <main className="flex-1 pb-20">
-        
+
         {/* Breadcrumb Navigation Bar */}
         <div className="bg-white border-b border-[#244C32]/10 py-3.5 px-4 sm:px-6 lg:px-8">
           <div className="max-w-7xl mx-auto flex items-center justify-between text-xs">
@@ -127,7 +127,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
           <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#244C32]/10 shadow-xs">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
-              
+
               {/* Left Column: Image Gallery (5 cols) */}
               <div className="lg:col-span-5 space-y-4">
                 {/* Main Large Display Image */}
@@ -156,11 +156,10 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
                   {/* Wishlist Button */}
                   <button
                     onClick={() => toggleWishlist(product)}
-                    className={`absolute top-4 right-4 z-10 w-11 h-11 rounded-full flex items-center justify-center transition-all shadow-md ${
-                      isFavorited
-                        ? 'bg-rose-500 text-white'
-                        : 'bg-white/90 text-gray-700 hover:text-rose-500 hover:bg-white'
-                    }`}
+                    className={`absolute top-4 right-4 z-10 w-11 h-11 rounded-full flex items-center justify-center transition-all shadow-md ${isFavorited
+                      ? 'bg-rose-500 text-white'
+                      : 'bg-white/90 text-gray-700 hover:text-rose-500 hover:bg-white'
+                      }`}
                     title="পছন্দের তালিকায় রাখুন"
                   >
                     <Heart className={`w-5 h-5 ${isFavorited ? 'fill-current' : ''}`} />
@@ -180,9 +179,8 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
                       <button
                         key={idx}
                         onClick={() => setActiveImageIdx(idx)}
-                        className={`w-20 h-20 rounded-2xl overflow-hidden border-2 transition-all shrink-0 bg-white ${
-                          activeImageIdx === idx ? 'border-[#244C32] scale-103 shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
-                        }`}
+                        className={`w-20 h-20 rounded-2xl overflow-hidden border-2 transition-all shrink-0 bg-white ${activeImageIdx === idx ? 'border-[#244C32] scale-103 shadow-md' : 'border-gray-200 opacity-70 hover:opacity-100'
+                          }`}
                       >
                         <img src={img} alt="Thumbnail" className="w-full h-full object-cover" />
                       </button>
@@ -205,7 +203,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
 
               {/* Right Column: Product Information & Purchase Controls (7 cols) */}
               <div className="lg:col-span-7 space-y-6">
-                
+
                 <div>
                   {/* Category & Rating */}
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
@@ -265,7 +263,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
 
                 {/* Purchase Controls: Quantity & Buttons */}
                 <div className="pt-4 border-t border-gray-100 space-y-4">
-                  
+
                   {/* Quantity Selector */}
                   <div className="flex items-center gap-4">
                     <span className="text-xs sm:text-sm font-bold text-gray-700">পরিমাণ নির্বাচন:</span>
@@ -314,12 +312,12 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
                   {/* Instant Order Channels: Call & WhatsApp */}
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                     <a
-                      href="tel:+8801700123456"
+                      href="tel:+8801312617206"
                       onClick={() => trackContact('call', 'product_detail')}
                       className="h-10 px-3 bg-gray-50/80 hover:bg-gray-100 border border-gray-200 text-gray-700 hover:text-[#244C32] rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
                     >
                       <PhoneCall className="w-3.5 h-3.5 text-[#244C32]" />
-                      <span>ফোনে অর্ডার (01700-123456)</span>
+                      <span>ফোনে অর্ডার (013-12617206)</span>
                     </a>
 
                     <button
@@ -358,16 +356,15 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
         {/* Detailed Information Tabs Section */}
         <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12">
           <div className="bg-white rounded-3xl p-6 sm:p-10 border border-[#244C32]/10 shadow-xs">
-            
+
             {/* Tabs Header */}
             <div className="flex border-b border-gray-200 gap-4 sm:gap-8 overflow-x-auto scrollbar-none mb-6">
               <button
                 onClick={() => setActiveTab('desc')}
-                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${
-                  activeTab === 'desc'
-                    ? 'border-[#244C32] text-[#244C32]'
-                    : 'border-transparent text-gray-500 hover:text-gray-900'
-                }`}
+                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${activeTab === 'desc'
+                  ? 'border-[#244C32] text-[#244C32]'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+                  }`}
               >
                 <FileText className="w-4 h-4" />
                 <span>বিস্তারিত বিবরণ ও ব্যবহার প্রণালী</span>
@@ -375,11 +372,10 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
 
               <button
                 onClick={() => setActiveTab('nutrition')}
-                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${
-                  activeTab === 'nutrition'
-                    ? 'border-[#244C32] text-[#244C32]'
-                    : 'border-transparent text-gray-500 hover:text-gray-900'
-                }`}
+                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${activeTab === 'nutrition'
+                  ? 'border-[#244C32] text-[#244C32]'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+                  }`}
               >
                 <Activity className="w-4 h-4" />
                 <span>পুষ্টিগুণ ও স্বাস্থ্য উপকারিতা</span>
@@ -387,11 +383,10 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
 
               <button
                 onClick={() => setActiveTab('origin')}
-                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${
-                  activeTab === 'origin'
-                    ? 'border-[#244C32] text-[#244C32]'
-                    : 'border-transparent text-gray-500 hover:text-gray-900'
-                }`}
+                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${activeTab === 'origin'
+                  ? 'border-[#244C32] text-[#244C32]'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+                  }`}
               >
                 <UserCheck className="w-4 h-4" />
                 <span>কৃষক ও অঞ্চলের গল্প</span>
@@ -399,11 +394,10 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
 
               <button
                 onClick={() => setActiveTab('reviews')}
-                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${
-                  activeTab === 'reviews'
-                    ? 'border-[#244C32] text-[#244C32]'
-                    : 'border-transparent text-gray-500 hover:text-gray-900'
-                }`}
+                className={`pb-3 text-sm font-bold flex items-center gap-2 border-b-2 whitespace-nowrap transition-all ${activeTab === 'reviews'
+                  ? 'border-[#244C32] text-[#244C32]'
+                  : 'border-transparent text-gray-500 hover:text-gray-900'
+                  }`}
               >
                 <Star className="w-4 h-4" />
                 <span>গ্রাহক রিভিউ ({product.reviewCount})</span>
@@ -415,7 +409,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
               {activeTab === 'desc' && (
                 <div className="space-y-4">
                   <p>{product.fullDescBn}</p>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-2">
                     <div className="bg-[#FAF8F0] p-4 rounded-2xl border border-gray-100 space-y-1.5">
                       <h4 className="font-bold text-[#244C32] flex items-center gap-1.5">

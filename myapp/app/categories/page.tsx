@@ -16,14 +16,14 @@ import AuthModal from '@/components/AuthModal';
 import CheckoutModal from '@/components/CheckoutModal';
 import OrderSuccessModal from '@/components/OrderSuccessModal';
 import PolicyModal from '@/components/PolicyModal';
-import { 
-  ChevronRight, 
-  Sparkles, 
-  ArrowRight, 
-  MapPin, 
-  ShieldCheck, 
-  CheckCircle2, 
-  Leaf, 
+import {
+  ChevronRight,
+  Sparkles,
+  ArrowRight,
+  MapPin,
+  ShieldCheck,
+  CheckCircle2,
+  Leaf,
   PhoneCall,
   ShoppingBag
 } from 'lucide-react';
@@ -81,7 +81,7 @@ function CategoriesContent() {
       <Navbar />
 
       <main className="flex-1 pb-20">
-        
+
         {/* Breadcrumb & Header Banner */}
         <section className="bg-gradient-to-r from-[#244C32] via-[#1A3824] to-[#2E5F3F] text-white py-12 px-4 sm:px-6 lg:px-8 border-b-4 border-[#E5B83F]">
           <div className="max-w-7xl mx-auto">
@@ -113,8 +113,8 @@ function CategoriesContent() {
                 </div>
                 <div>
                   <div className="text-[11px] text-gray-200">ফোনে সরাসরি অর্ডার করুন:</div>
-                  <a href="tel:+8801700123456" className="text-base font-extrabold text-[#E5B83F] hover:underline">
-                    01700-123456
+                  <a href="tel:+8801312617206" className="text-base font-extrabold text-[#E5B83F] hover:underline">
+                    01312617206
                   </a>
                 </div>
               </div>
@@ -158,7 +158,7 @@ function CategoriesContent() {
               >
                 {/* Category Header Row */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center border-b border-gray-100 pb-8 mb-8">
-                  
+
                   {/* Left: Category Image */}
                   <div className="lg:col-span-4 relative h-60 sm:h-72 rounded-3xl overflow-hidden shadow-md group">
                     <img
@@ -167,7 +167,7 @@ function CategoriesContent() {
                       className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
-                    
+
                     {/* Badge */}
                     <span className="absolute top-3 left-3 bg-[#E5B83F] text-[#244C32] text-xs font-black px-3 py-1 rounded-full shadow-md">
                       {cat.tagline}

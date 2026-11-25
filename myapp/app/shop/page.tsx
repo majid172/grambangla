@@ -17,19 +17,19 @@ import AuthModal from '@/components/AuthModal';
 import CheckoutModal from '@/components/CheckoutModal';
 import OrderSuccessModal from '@/components/OrderSuccessModal';
 import PolicyModal from '@/components/PolicyModal';
-import { 
-  Filter, 
-  Search, 
-  SlidersHorizontal, 
-  LayoutGrid, 
-  List, 
-  X, 
-  Sparkles, 
-  ChevronRight, 
-  MapPin, 
-  CheckCircle2, 
-  ShieldCheck, 
-  PhoneCall, 
+import {
+  Filter,
+  Search,
+  SlidersHorizontal,
+  LayoutGrid,
+  List,
+  X,
+  Sparkles,
+  ChevronRight,
+  MapPin,
+  CheckCircle2,
+  ShieldCheck,
+  PhoneCall,
   Star,
   ShoppingBag,
   ArrowRight,
@@ -39,11 +39,11 @@ import {
 } from 'lucide-react';
 
 function ShopContent() {
-  const { 
-    addToCart, 
-    toggleWishlist, 
-    isInWishlist, 
-    setIsCheckoutOpen 
+  const {
+    addToCart,
+    toggleWishlist,
+    isInWishlist,
+    setIsCheckoutOpen
   } = useCart();
 
   const [selectedCategory, setSelectedCategory] = useState<string>('all');
@@ -66,7 +66,7 @@ function ShopContent() {
   ];
 
   const handleDistrictToggle = (dist: string) => {
-    setSelectedDistricts(prev => 
+    setSelectedDistricts(prev =>
       prev.includes(dist) ? prev.filter(d => d !== dist) : [...prev, dist]
     );
   };
@@ -88,14 +88,14 @@ function ShopContent() {
       const matchesPrice = product.price <= maxPrice;
 
       // District match
-      const matchesDistrict = selectedDistricts.length === 0 || 
+      const matchesDistrict = selectedDistricts.length === 0 ||
         selectedDistricts.some(dist => product.sourceLocation.includes(dist));
 
       // Search match
       const q = searchQuery.toLowerCase().trim();
-      const matchesSearch = !q || 
-        product.nameBn.toLowerCase().includes(q) || 
-        product.nameEn.toLowerCase().includes(q) || 
+      const matchesSearch = !q ||
+        product.nameBn.toLowerCase().includes(q) ||
+        product.nameEn.toLowerCase().includes(q) ||
         product.sourceLocation.toLowerCase().includes(q) ||
         product.shortDescBn.toLowerCase().includes(q);
 
@@ -141,8 +141,8 @@ function ShopContent() {
                 </div>
                 <div>
                   <div className="text-[11px] text-gray-200">ফোনে সরাসরি অর্ডার করুন:</div>
-                  <a href="tel:+8801700123456" className="text-sm font-extrabold text-[#E5B83F] hover:underline">
-                    01700-123456
+                  <a href="tel:+8801312617206" className="text-sm font-extrabold text-[#E5B83F] hover:underline">
+                    01312617206
                   </a>
                 </div>
               </div>
@@ -153,10 +153,10 @@ function ShopContent() {
         {/* Main Shop Container */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
-            
+
             {/* Desktop Left Sidebar: 3 cols */}
             <aside className="hidden lg:block lg:col-span-3 space-y-6 sticky top-24">
-              
+
               {/* Category Filter Box */}
               <div className="bg-white rounded-3xl p-5 border border-[#244C32]/10 shadow-xs">
                 <div className="flex items-center justify-between border-b pb-3 mb-3">
@@ -165,7 +165,7 @@ function ShopContent() {
                     <span>ক্যাটাগরিসমূহ</span>
                   </h3>
                   {selectedCategory !== 'all' && (
-                    <button 
+                    <button
                       onClick={() => setSelectedCategory('all')}
                       className="text-[11px] text-[#8B6E1A] hover:underline font-bold"
                     >
@@ -177,11 +177,10 @@ function ShopContent() {
                 <div className="space-y-1 text-xs">
                   <button
                     onClick={() => setSelectedCategory('all')}
-                    className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-all ${
-                      selectedCategory === 'all'
-                        ? 'bg-[#244C32] text-[#FAF8F0] font-bold shadow-xs'
-                        : 'text-gray-700 hover:bg-[#FAF8F0]'
-                    }`}
+                    className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-all ${selectedCategory === 'all'
+                      ? 'bg-[#244C32] text-[#FAF8F0] font-bold shadow-xs'
+                      : 'text-gray-700 hover:bg-[#FAF8F0]'
+                      }`}
                   >
                     <span>সব পণ্য (All Products)</span>
                     <span className="text-[10px] opacity-75">{PRODUCTS.length}</span>
@@ -193,11 +192,10 @@ function ShopContent() {
                       <button
                         key={cat.id}
                         onClick={() => setSelectedCategory(cat.slug)}
-                        className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-all ${
-                          isSelected
-                            ? 'bg-[#244C32] text-[#FAF8F0] font-bold shadow-xs'
-                            : 'text-gray-700 hover:bg-[#FAF8F0]'
-                        }`}
+                        className={`w-full flex items-center justify-between px-3 py-2 rounded-xl transition-all ${isSelected
+                          ? 'bg-[#244C32] text-[#FAF8F0] font-bold shadow-xs'
+                          : 'text-gray-700 hover:bg-[#FAF8F0]'
+                          }`}
                       >
                         <span className="truncate pr-2">{cat.nameBn}</span>
                         <span className="text-[10px] opacity-75">{cat.itemCount}</span>
@@ -212,7 +210,7 @@ function ShopContent() {
                 <h3 className="font-extrabold text-sm text-[#244C32] border-b pb-3 mb-4">
                   সর্বোচ্চ মূল্য সীমা (Price Range)
                 </h3>
-                
+
                 <div className="space-y-3">
                   <div className="flex items-center justify-between text-xs font-bold text-[#244C32]">
                     <span>৳১০০</span>
@@ -242,7 +240,7 @@ function ShopContent() {
                     <span>আঞ্চলিক উৎস (District)</span>
                   </h3>
                   {selectedDistricts.length > 0 && (
-                    <button 
+                    <button
                       onClick={() => setSelectedDistricts([])}
                       className="text-[11px] text-[#8B6E1A] hover:underline font-bold"
                     >
@@ -255,8 +253,8 @@ function ShopContent() {
                   {districts.map((dist) => {
                     const checked = selectedDistricts.includes(dist);
                     return (
-                      <label 
-                        key={dist} 
+                      <label
+                        key={dist}
                         className="flex items-center justify-between cursor-pointer py-1 text-gray-700 hover:text-[#244C32]"
                       >
                         <div className="flex items-center gap-2">
@@ -292,10 +290,10 @@ function ShopContent() {
 
             {/* Right Main Catalog Area: 9 cols */}
             <div className="lg:col-span-9 space-y-6">
-              
+
               {/* Top Controls: Search, Sort, View Modes & Mobile Filter Toggle */}
               <div className="bg-white rounded-3xl p-4 sm:p-5 border border-[#244C32]/10 shadow-xs space-y-4">
-                
+
                 <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
                   {/* Search input */}
                   <div className="relative w-full sm:w-80">
@@ -319,7 +317,7 @@ function ShopContent() {
 
                   {/* Right: Mobile Filter Button, Sorting & View Toggle */}
                   <div className="flex items-center gap-2.5 w-full sm:w-auto justify-between sm:justify-end">
-                    
+
                     {/* Mobile Filter Button */}
                     <button
                       onClick={() => setMobileFilterOpen(true)}
@@ -349,18 +347,16 @@ function ShopContent() {
                     <div className="hidden sm:flex items-center bg-[#FAF8F0] p-1 rounded-xl border border-gray-200">
                       <button
                         onClick={() => setViewMode('grid')}
-                        className={`p-1.5 rounded-lg transition-colors ${
-                          viewMode === 'grid' ? 'bg-[#244C32] text-white' : 'text-gray-500 hover:text-gray-900'
-                        }`}
+                        className={`p-1.5 rounded-lg transition-colors ${viewMode === 'grid' ? 'bg-[#244C32] text-white' : 'text-gray-500 hover:text-gray-900'
+                          }`}
                         title="গ্রিড ভিউ"
                       >
                         <LayoutGrid className="w-4 h-4" />
                       </button>
                       <button
                         onClick={() => setViewMode('list')}
-                        className={`p-1.5 rounded-lg transition-colors ${
-                          viewMode === 'list' ? 'bg-[#244C32] text-white' : 'text-gray-500 hover:text-gray-900'
-                        }`}
+                        className={`p-1.5 rounded-lg transition-colors ${viewMode === 'list' ? 'bg-[#244C32] text-white' : 'text-gray-500 hover:text-gray-900'
+                          }`}
                         title="লিস্ট ভিউ"
                       >
                         <List className="w-4 h-4" />
@@ -373,7 +369,7 @@ function ShopContent() {
                 {/* Active Filter Badges */}
                 <div className="flex flex-wrap items-center gap-2 pt-2 border-t border-gray-100 text-xs">
                   <span className="text-gray-500 font-medium">ফলাফল: <strong>{filteredProducts.length} টি পণ্য</strong></span>
-                  
+
                   {selectedCategory !== 'all' && (
                     <span className="inline-flex items-center gap-1 bg-[#244C32]/10 text-[#244C32] px-2.5 py-1 rounded-full font-bold">
                       ক্যাটাগরি: {CATEGORIES.find(c => c.slug === selectedCategory)?.nameBn}
@@ -428,7 +424,7 @@ function ShopContent() {
                           className="bg-white rounded-3xl p-4 sm:p-5 border border-[#244C32]/10 shadow-xs hover:shadow-xl transition-all flex flex-col sm:flex-row gap-5 items-center justify-between group"
                         >
                           {/* Image */}
-                          <Link 
+                          <Link
                             href={`/details/${product.slug}`}
                             className="relative block w-full sm:w-48 h-48 rounded-2xl overflow-hidden bg-gray-50 shrink-0"
                           >
@@ -568,9 +564,8 @@ function ShopContent() {
                 <div className="space-y-1 text-xs">
                   <button
                     onClick={() => { setSelectedCategory('all'); setMobileFilterOpen(false); }}
-                    className={`w-full text-left px-3 py-2 rounded-xl ${
-                      selectedCategory === 'all' ? 'bg-[#244C32] text-white font-bold' : 'text-gray-700'
-                    }`}
+                    className={`w-full text-left px-3 py-2 rounded-xl ${selectedCategory === 'all' ? 'bg-[#244C32] text-white font-bold' : 'text-gray-700'
+                      }`}
                   >
                     সব পণ্য ({PRODUCTS.length})
                   </button>
@@ -578,9 +573,8 @@ function ShopContent() {
                     <button
                       key={cat.id}
                       onClick={() => { setSelectedCategory(cat.slug); setMobileFilterOpen(false); }}
-                      className={`w-full text-left px-3 py-2 rounded-xl ${
-                        selectedCategory === cat.slug ? 'bg-[#244C32] text-white font-bold' : 'text-gray-700'
-                      }`}
+                      className={`w-full text-left px-3 py-2 rounded-xl ${selectedCategory === cat.slug ? 'bg-[#244C32] text-white font-bold' : 'text-gray-700'
+                        }`}
                     >
                       {cat.nameBn} ({cat.itemCount})
                     </button>

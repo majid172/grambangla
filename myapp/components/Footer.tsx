@@ -3,11 +3,11 @@
 import React from 'react';
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
-import { 
-  Leaf, 
-  MapPin, 
-  Phone, 
-  Mail, 
+import {
+  Leaf,
+  MapPin,
+  Phone,
+  Mail,
   ArrowRight,
   ShieldCheck,
   CreditCard
@@ -159,7 +159,7 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Phone className="w-4 h-4 text-[#E5B83F] shrink-0" />
-                <a href="tel:+8801700123456" className="hover:text-white">
+                <a href="tel:+8801312617206" className="hover:text-white">
                   +880 1700-123456 (হটলাইন)
                 </a>
               </li>
@@ -201,23 +201,23 @@ export default function Footer() {
         {/* Bottom Bar & Policies */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
           <p>© {new Date().getFullYear()} গ্রামবাংলা (GramBangla). সর্বস্বত্ব সংরক্ষিত।</p>
-          
+
           <div className="flex flex-wrap items-center gap-4 text-gray-300">
-            <button 
+            <button
               onClick={() => setPolicyModal('privacy')}
               className="hover:text-[#E5B83F] transition-colors"
             >
               গোপনীয়তা নীতি (Privacy Policy)
             </button>
             <span>•</span>
-            <button 
+            <button
               onClick={() => setPolicyModal('terms')}
               className="hover:text-[#E5B83F] transition-colors"
             >
               ব্যবহারের শর্তাবলী (Terms & Conditions)
             </button>
             <span>•</span>
-            <button 
+            <button
               onClick={() => setPolicyModal('refund')}
               className="hover:text-[#E5B83F] transition-colors"
             >

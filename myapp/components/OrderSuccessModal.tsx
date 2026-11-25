@@ -13,13 +13,13 @@ export default function OrderSuccessModal() {
     const text = encodeURIComponent(
       `হ্যালো গ্রামবাংলা, আমার অর্ডার আইডি ${completedOrder.orderId}। মোট প্রদেয় ৳${completedOrder.total}। আমি ডেলিভারি স্ট্যাটাস জানতে চাই।`
     );
-    window.open(`https://wa.me/8801700123456?text=${text}`, '_blank');
+    window.open(`https://wa.me/8801312617206?text=${text}`, '_blank');
   };
 
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-fadeIn">
       <div className="relative bg-white rounded-3xl max-w-lg w-full shadow-2xl border border-[#244C32]/20 overflow-hidden text-center p-6 sm:p-8">
-        
+
         {/* Celebration Header */}
         <div className="w-20 h-20 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-4 animate-bounce">
           <CheckCircle2 className="w-12 h-12" />
