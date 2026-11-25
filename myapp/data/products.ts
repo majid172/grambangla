@@ -84,8 +84,9 @@ export const PRODUCTS: Product[] = [
     featured: true,
     isBestseller: true,
     organicCertified: true,
-    image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
+    image: 'https://cdn2.stylecraze.com/wp-content/uploads/2013/08/65-iStock-500478982.jpg.avif',
     gallery: [
+      'https://cdn2.stylecraze.com/wp-content/uploads/2013/08/65-iStock-500478982.jpg.avif',
       'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
       'https://img.drz.lazcdn.com/static/bd/p/37ca830c01e1f9fcf89e784e64a75299.jpg_960x960q80.jpg_.webp'
 
@@ -143,8 +144,8 @@ export const PRODUCTS: Product[] = [
     categoryNameBn: 'ঘানিভাঙা সরিষার তেল',
     shortDescBn: 'পুরো পরিবারের স্বাস্থ্যকর রান্নার জন্য উপযুক্ত ২ লিটার সাশ্রয়ী ক্যান। আসল মাঘী সরিষার প্রাকৃতিক ঝাঁঝ।',
     fullDescBn: 'পরিবারের প্রতিদিনের রান্নাকে স্বাস্থ্যকর রাখতে বিশেষ ২ লিটার ফুডগ্রেড ক্যান। সিরাজগঞ্জের শতভাগ খাঁটি সরিষা থেকে প্রস্তুত। ইলিশ ভাজি, শুঁটকি ভুনা কিংবা যে কোনো ঝাল তরকারিতে এনে দেয় বাংলার ঐতিহ্যবাহী স্বাদ।',
-    price: 240,
-    originalPrice: 260,
+    price: 470,
+    originalPrice: 280,
     discountPercent: 15,
     unit: '২ লিটার ফুডগ্রেড ক্যান',
     inStock: true,
