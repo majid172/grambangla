@@ -12,7 +12,7 @@ import {
   MapPin, 
   Check, 
   Sparkles,
-  Zap
+  ArrowRight
 } from 'lucide-react';
 
 interface ProductCardProps {
@@ -161,20 +161,20 @@ export default function ProductCard({ product }: ProductCardProps) {
           <div className="grid grid-cols-2 gap-2">
             <button
               onClick={() => addToCart(product, 1)}
-              className={`py-2.5 px-2 rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 transition-all duration-300 ${
+              className={`h-9 px-2 rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 transition-all border cursor-pointer ${
                 inCartQuantity > 0
-                  ? 'bg-[#E5B83F] text-[#244C32] hover:bg-[#d4a82b]'
-                  : 'bg-[#244C32]/10 hover:bg-[#244C32] text-[#244C32] hover:text-[#FAF8F0]'
+                  ? 'bg-amber-50 text-amber-900 border-amber-300 hover:bg-amber-100 shadow-2xs'
+                  : 'bg-white hover:bg-gray-50 text-[#244C32] border-gray-300 hover:border-gray-400 shadow-2xs active:bg-gray-100'
               }`}
             >
               {inCartQuantity > 0 ? (
                 <>
-                  <Check className="w-3.5 h-3.5" />
+                  <Check className="w-3.5 h-3.5 text-amber-700" />
                   <span>কার্টে ({inCartQuantity})</span>
                 </>
               ) : (
                 <>
-                  <ShoppingBag className="w-3.5 h-3.5" />
+                  <ShoppingBag className="w-3.5 h-3.5 text-[#244C32]" />
                   <span>কার্টে নিন</span>
                 </>
               )}
@@ -182,10 +182,10 @@ export default function ProductCard({ product }: ProductCardProps) {
 
             <button
               onClick={handleQuickBuy}
-              className="py-2.5 px-2 bg-[#244C32] hover:bg-[#1A3824] text-[#FAF8F0] rounded-xl text-xs font-bold flex items-center justify-center gap-1 shadow-sm transition-colors"
+              className="h-9 px-2 bg-[#244C32] hover:bg-[#1B3B26] active:bg-[#142C1D] text-white border border-[#1B3B26] rounded-lg text-xs font-bold flex items-center justify-center gap-1 shadow-2xs hover:shadow-xs active:scale-[0.98] transition-all cursor-pointer"
             >
-              <Zap className="w-3.5 h-3.5 text-[#E5B83F] fill-[#E5B83F]" />
               <span>সরাসরি কিনুন</span>
+              <ArrowRight className="w-3.5 h-3.5 text-[#E5B83F]" />
             </button>
           </div>
 

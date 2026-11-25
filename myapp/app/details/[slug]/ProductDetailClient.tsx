@@ -20,6 +20,7 @@ import {
   ChevronRight, 
   Star, 
   ShoppingBag, 
+  ArrowRight,
   Zap, 
   Heart, 
   MapPin, 
@@ -280,39 +281,39 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
                   </div>
 
                   {/* Primary Action Buttons */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-1">
                     <button
                       onClick={() => addToCart(product, quantity)}
-                      className="w-full py-4 bg-[#FAF8F0] hover:bg-[#244C32]/10 text-[#244C32] border-2 border-[#244C32]/30 rounded-2xl text-sm font-extrabold flex items-center justify-center gap-2 transition-colors shadow-xs"
+                      className="w-full h-12 px-5 bg-white hover:bg-emerald-50/40 text-[#244C32] border border-gray-300 hover:border-[#244C32] rounded-xl text-sm font-bold flex items-center justify-center gap-2 transition-all shadow-2xs hover:shadow-xs active:bg-gray-100 active:scale-[0.99] cursor-pointer"
                     >
-                      <ShoppingBag className="w-5 h-5 text-[#244C32]" />
+                      <ShoppingBag className="w-4 h-4 text-[#244C32] shrink-0" />
                       <span>কার্টে যোগ করুন</span>
                     </button>
 
                     <button
                       onClick={handleBuyNow}
-                      className="w-full py-4 bg-[#244C32] hover:bg-[#1A3824] text-[#FAF8F0] rounded-2xl text-sm font-black flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-0.5"
+                      className="w-full h-12 px-5 bg-[#244C32] hover:bg-[#1B3B26] active:bg-[#142C1D] text-white border border-[#1B3B26] rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer"
                     >
-                      <Zap className="w-5 h-5 text-[#E5B83F] fill-[#E5B83F]" />
                       <span>এখনই সরাসরি অর্ডার করুন</span>
+                      <ArrowRight className="w-4 h-4 text-[#E5B83F] shrink-0" />
                     </button>
                   </div>
 
                   {/* Instant Order Channels: Call & WhatsApp */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                     <a
                       href="tel:+8801700123456"
-                      className="py-3 px-4 bg-white border border-gray-200 hover:border-[#244C32] text-[#244C32] rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-colors shadow-2xs"
+                      className="h-10 px-3 bg-gray-50/80 hover:bg-gray-100 border border-gray-200 text-gray-700 hover:text-[#244C32] rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
                     >
-                      <PhoneCall className="w-4 h-4 text-[#E5B83F]" />
+                      <PhoneCall className="w-3.5 h-3.5 text-[#244C32]" />
                       <span>ফোনে অর্ডার (01700-123456)</span>
                     </a>
 
                     <button
                       onClick={handleWhatsAppOrder}
-                      className="py-3 px-4 bg-[#25D366]/10 hover:bg-[#25D366] text-[#25D366] hover:text-white border border-[#25D366]/30 rounded-xl text-xs font-bold flex items-center justify-center gap-2 transition-colors shadow-2xs"
+                      className="h-10 px-3 bg-[#E8F8EE] hover:bg-[#D4F4DF] text-[#15803D] border border-[#B8E6C6] rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition-colors cursor-pointer"
                     >
-                      <MessageCircle className="w-4 h-4 fill-current" />
+                      <MessageCircle className="w-3.5 h-3.5 fill-current" />
                       <span>হোয়াটসঅ্যাপে সরাসরি অর্ডার</span>
                     </button>
                   </div>

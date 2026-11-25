@@ -32,7 +32,7 @@ import {
   PhoneCall, 
   Star,
   ShoppingBag,
-  Zap,
+  ArrowRight,
   Heart,
   Eye,
   RotateCcw
@@ -497,9 +497,9 @@ function ShopContent() {
                             <div className="w-full space-y-2">
                               <button
                                 onClick={() => addToCart(product, 1)}
-                                className="w-full py-2 bg-[#244C32] hover:bg-[#1A3824] text-[#FAF8F0] rounded-xl text-xs font-bold flex items-center justify-center gap-1.5 shadow-xs"
+                                className="w-full h-9 bg-white hover:bg-[#FAF8F0] text-[#244C32] border border-gray-300 hover:border-[#244C32] rounded-lg text-xs font-bold flex items-center justify-center gap-1.5 shadow-2xs transition-all cursor-pointer"
                               >
-                                <ShoppingBag className="w-3.5 h-3.5 text-[#E5B83F]" />
+                                <ShoppingBag className="w-3.5 h-3.5 text-[#244C32]" />
                                 <span>কার্টে যোগ করুন</span>
                               </button>
 
@@ -508,10 +508,10 @@ function ShopContent() {
                                   addToCart(product, 1);
                                   setIsCheckoutOpen(true);
                                 }}
-                                className="w-full py-2 bg-[#FAF8F0] hover:bg-[#244C32]/10 text-[#244C32] border border-[#244C32]/30 rounded-xl text-xs font-bold flex items-center justify-center gap-1"
+                                className="w-full h-9 bg-[#244C32] hover:bg-[#1B3B26] text-white border border-[#1B3B26] rounded-lg text-xs font-bold flex items-center justify-center gap-1 shadow-2xs hover:shadow-xs active:scale-[0.98] transition-all cursor-pointer"
                               >
-                                <Zap className="w-3.5 h-3.5 text-[#8B6E1A]" />
                                 <span>সরাসরি অর্ডার</span>
+                                <ArrowRight className="w-3.5 h-3.5 text-[#E5B83F]" />
                               </button>
                             </div>
                           </div>

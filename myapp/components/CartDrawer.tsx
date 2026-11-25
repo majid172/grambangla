@@ -261,7 +261,7 @@ export default function CartDrawer() {
               {/* Checkout Button */}
               <button
                 onClick={handleProceedToCheckout}
-                className="w-full bg-[#244C32] hover:bg-[#1A3824] text-[#FAF8F0] py-3.5 rounded-2xl text-sm font-bold flex items-center justify-center gap-2 shadow-xl hover:shadow-2xl transition-all duration-300"
+                className="w-full h-12 bg-[#244C32] hover:bg-[#1B3B26] active:bg-[#142C1D] text-white border border-[#1B3B26] rounded-xl text-sm font-bold flex items-center justify-center gap-2 shadow-sm hover:shadow-md transition-all active:scale-[0.99] cursor-pointer"
               >
                 <span>অর্ডার সম্পন্ন করতে এগিয়ে যান</span>
                 <ArrowRight className="w-4 h-4 text-[#E5B83F]" />
