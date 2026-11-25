@@ -11,12 +11,12 @@ export default function PromoBanner() {
     <section className="py-12 bg-[#FAF8F0]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-r from-[#244C32] via-[#1A3824] to-[#2E5F3F] text-white p-8 sm:p-12 border-2 border-[#E5B83F]/40">
-          
+
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10 bg-[radial-gradient(#E5B83F_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
 
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-            
+
             {/* Left Texts */}
             <div className="lg:col-span-8 space-y-4 text-center lg:text-left">
               <div className="inline-flex items-center gap-2 bg-[#E5B83F] text-[#244C32] px-3.5 py-1 rounded-full text-xs font-black uppercase tracking-wider shadow-md">
@@ -38,12 +38,12 @@ export default function PromoBanner() {
                   <Tag className="w-4 h-4 text-[#E5B83F]" />
                   <span>কুপন কোড:</span>
                   <code className="font-mono font-bold text-[#E5B83F] bg-white/10 px-2 py-0.5 rounded">
-                    GRAMBANGLA10
+                    Shikor10
                   </code>
                 </div>
 
                 <button
-                  onClick={() => applyCoupon('GRAMBANGLA10')}
+                  onClick={() => applyCoupon('Shikor10')}
                   className="text-xs bg-[#E5B83F]/20 hover:bg-[#E5B83F] text-[#FAF8F0] hover:text-[#244C32] font-semibold px-3 py-2 rounded-xl transition-colors border border-[#E5B83F]/40"
                 >
                   কুপন প্রয়োগ করুন

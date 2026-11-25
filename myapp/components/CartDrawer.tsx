@@ -4,31 +4,31 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
 import { trackInitiateCheckout } from '@/lib/fpixel';
-import { 
-  X, 
-  Trash2, 
-  Plus, 
-  Minus, 
-  ShoppingBag, 
-  ArrowRight, 
-  Sparkles, 
-  Truck, 
-  Tag, 
-  CheckCircle2 
+import {
+  X,
+  Trash2,
+  Plus,
+  Minus,
+  ShoppingBag,
+  ArrowRight,
+  Sparkles,
+  Truck,
+  Tag,
+  CheckCircle2
 } from 'lucide-react';
 
 export default function CartDrawer() {
-  const { 
-    cart, 
-    isCartOpen, 
-    setIsCartOpen, 
-    updateQuantity, 
-    removeFromCart, 
-    cartTotal, 
-    discountAmount, 
-    finalTotal, 
-    appliedCoupon, 
-    applyCoupon, 
+  const {
+    cart,
+    isCartOpen,
+    setIsCartOpen,
+    updateQuantity,
+    removeFromCart,
+    cartTotal,
+    discountAmount,
+    finalTotal,
+    appliedCoupon,
+    applyCoupon,
     removeCoupon,
     setIsCheckoutOpen
   } = useCart();
@@ -68,7 +68,7 @@ export default function CartDrawer() {
     <div className="fixed inset-0 z-50 overflow-hidden bg-black/60 backdrop-blur-sm animate-fadeIn">
       <div className="absolute inset-y-0 right-0 max-w-full flex pl-10">
         <div className="w-screen max-w-md bg-white shadow-2xl flex flex-col justify-between border-l border-[#244C32]/20">
-          
+
           {/* Header */}
           <div className="p-5 bg-[#FAF8F0] border-b border-[#244C32]/10 flex items-center justify-between">
             <div className="flex items-center gap-2">
@@ -125,7 +125,7 @@ export default function CartDrawer() {
                 </div>
                 <h4 className="font-bold text-[#244C32] text-lg">আপনার ব্যাগ খালি</h4>
                 <p className="text-xs text-gray-500 max-w-xs">
-                  গ্রামবাংলার খাঁটি সরিষার তেল, ঘি বা মধু যুক্ত করে আপনার সুস্থ জীবনের যাত্রা শুরু করুন।
+                  শিকড়র খাঁটি সরিষার তেল, ঘি বা মধু যুক্ত করে আপনার সুস্থ জীবনের যাত্রা শুরু করুন।
                 </p>
                 <button
                   onClick={() => setIsCartOpen(false)}
@@ -141,7 +141,7 @@ export default function CartDrawer() {
                   className="flex gap-3 bg-[#FAF8F0] p-3 rounded-2xl border border-gray-100 hover:border-[#244C32]/20 transition-colors"
                 >
                   {/* Thumbnail */}
-                  <Link 
+                  <Link
                     href={`/details/${item.product.slug}`}
                     onClick={() => setIsCartOpen(false)}
                     className="shrink-0"
@@ -157,7 +157,7 @@ export default function CartDrawer() {
                   <div className="flex-1 flex flex-col justify-between min-w-0">
                     <div>
                       <div className="flex items-start justify-between gap-1">
-                        <Link 
+                        <Link
                           href={`/details/${item.product.slug}`}
                           onClick={() => setIsCartOpen(false)}
                           className="font-bold text-xs sm:text-sm text-[#244C32] hover:text-[#8B6E1A] truncate transition-colors"
@@ -230,7 +230,7 @@ export default function CartDrawer() {
                     type="text"
                     value={couponCode}
                     onChange={(e) => setCouponCode(e.target.value)}
-                    placeholder="কুপন কোড লিখুন (যেমন GRAMBANGLA10)"
+                    placeholder="কুপন কোড লিখুন (যেমন Shikor10)"
                     className="flex-1 text-xs bg-gray-50 border border-gray-300 rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#244C32] font-semibold uppercase"
                   />
                   <button

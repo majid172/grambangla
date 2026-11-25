@@ -36,21 +36,21 @@ function MainShopApp() {
         <Hero />
 
         {/* 2. Category Highlights */}
-        <CategorySection 
-          activeCategory={activeCategory} 
-          onSelectCategory={(slug) => setActiveCategory(slug)} 
+        <CategorySection
+          activeCategory={activeCategory}
+          onSelectCategory={(slug) => setActiveCategory(slug)}
         />
 
         {/* 3. Featured Products Grid & Filter */}
-        <FeaturedProducts 
-          selectedCategory={activeCategory} 
-          onSelectCategory={(slug) => setActiveCategory(slug)} 
+        <FeaturedProducts
+          selectedCategory={activeCategory}
+          onSelectCategory={(slug) => setActiveCategory(slug)}
         />
 
         {/* 4. Traditional Production Process (Authentic Craftsmanship) */}
         <ProductionProcess />
 
-        {/* 5. Why Choose GramBangla (Quality & Purity Trust) */}
+        {/* 5. Why Choose Shikor (Quality & Purity Trust) */}
         <WhyChooseUs />
 
         {/* 6. Promotional Banner with Coupon */}

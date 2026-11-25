@@ -29,7 +29,7 @@ export default function Footer() {
               </div>
               <div>
                 <span className="font-extrabold text-2xl tracking-tight text-white">
-                  গ্রামবাংলা
+                  শিকড়
                 </span>
                 <p className="text-xs text-[#E5B83F] font-medium">
                   খাঁটি খাবার, বাংলার স্বাদ
@@ -38,7 +38,7 @@ export default function Footer() {
             </Link>
 
             <p className="text-sm text-gray-300 leading-relaxed pr-4">
-              গ্রামবাংলা বাংলাদেশের প্রতিটি ঘরে পৌঁছে দিচ্ছে খাঁটি কাঠের ঘানিভাঙা সরিষার তেল, পাবনার গাওয়া ঘি, সুন্দরবনের প্রাকৃতিক কাঁচা মধু এবং দেশীয় কৃষকদের হাতে উৎপাদিত বিষমুক্ত নিরাপদ খাদ্যশস্য। আমাদের প্রতিশ্রুতি—আপসবিহীন খাঁটি স্বাদ ও সুস্থ জীবন।
+              শিকড় বাংলাদেশের প্রতিটি ঘরে পৌঁছে দিচ্ছে খাঁটি কাঠের ঘানিভাঙা সরিষার তেল, পাবনার গাওয়া ঘি, সুন্দরবনের প্রাকৃতিক কাঁচা মধু এবং দেশীয় কৃষকদের হাতে উৎপাদিত বিষমুক্ত নিরাপদ খাদ্যশস্য। আমাদের প্রতিশ্রুতি—আপসবিহীন খাঁটি স্বাদ ও সুস্থ জীবন।
             </p>
 
             {/* Social Icons */}
@@ -102,7 +102,7 @@ export default function Footer() {
               </li>
               <li>
                 <a href="#why-us" className="hover:text-white flex items-center gap-1.5 transition-colors">
-                  <ArrowRight className="w-3.5 h-3.5 text-[#E5B83F]" /> কেন গ্রামবাংলা
+                  <ArrowRight className="w-3.5 h-3.5 text-[#E5B83F]" /> কেন শিকড়
                 </a>
               </li>
               <li>
@@ -165,8 +165,8 @@ export default function Footer() {
               </li>
               <li className="flex items-center gap-2.5">
                 <Mail className="w-4 h-4 text-[#E5B83F] shrink-0" />
-                <a href="mailto:support@grambangla.com" className="hover:text-white">
-                  support@grambangla.com
+                <a href="mailto:support@Shikor.com" className="hover:text-white">
+                  support@Shikor.com
                 </a>
               </li>
               <li className="pt-2">
@@ -200,7 +200,7 @@ export default function Footer() {
 
         {/* Bottom Bar & Policies */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} গ্রামবাংলা (GramBangla). সর্বস্বত্ব সংরক্ষিত।</p>
+          <p>© {new Date().getFullYear()} শিকড় (Shikor). সর্বস্বত্ব সংরক্ষিত।</p>
 
           <div className="flex flex-wrap items-center gap-4 text-gray-300">
             <button

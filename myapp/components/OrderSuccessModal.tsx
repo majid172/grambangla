@@ -11,7 +11,7 @@ export default function OrderSuccessModal() {
 
   const handleWhatsAppInquiry = () => {
     const text = encodeURIComponent(
-      `হ্যালো গ্রামবাংলা, আমার অর্ডার আইডি ${completedOrder.orderId}। মোট প্রদেয় ৳${completedOrder.total}। আমি ডেলিভারি স্ট্যাটাস জানতে চাই।`
+      `হ্যালো শিকড়, আমার অর্ডার আইডি ${completedOrder.orderId}। মোট প্রদেয় ৳${completedOrder.total}। আমি ডেলিভারি স্ট্যাটাস জানতে চাই।`
     );
     window.open(`https://wa.me/8801312617206?text=${text}`, '_blank');
   };

@@ -43,7 +43,7 @@ export default function Navbar() {
     { name: 'হোম', href: '/' },
     { name: 'শপ', href: '/shop' },
     { name: 'ক্যাটাগরি', href: '/categories' },
-    { name: 'কেন গ্রামবাংলা', href: '/#why-us' },
+    { name: 'কেন শিকড়', href: '/#why-us' },
     { name: 'গ্রাহক মতামত', href: '/#reviews' },
     { name: 'যোগাযোগ', href: '/contact' },
   ];
@@ -57,7 +57,7 @@ export default function Navbar() {
             <span className="inline-flex items-center gap-1 bg-[#E5B83F] text-[#244C32] px-2 py-0.5 rounded-full text-[11px] font-bold">
               <Sparkles className="w-3 h-3" /> অফার
             </span>
-            <span>কুপন <strong className="text-[#E5B83F] tracking-wide">GRAMBANGLA10</strong> দিয়ে পান যেকোনো অর্ডারে ১০% ছাড়!</span>
+            <span>কুপন <strong className="text-[#E5B83F] tracking-wide">Shikor10</strong> দিয়ে পান যেকোনো অর্ডারে ১০% ছাড়!</span>
           </div>
 
           <div className="hidden md:flex items-center gap-5 text-gray-200">
@@ -94,7 +94,7 @@ export default function Navbar() {
               <div className="flex flex-col">
                 <div className="flex items-center gap-1">
                   <span className="font-extrabold text-2xl sm:text-2xl tracking-tight text-[#244C32]">
-                    গ্রামবাংলা
+                    শিকড়
                   </span>
                   <span className="text-xs bg-[#E5B83F]/30 text-[#244C32] font-bold px-1.5 py-0.5 rounded">
                     অর্গানিক

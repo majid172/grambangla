@@ -7,7 +7,7 @@ import { X, Lock, Phone, Mail, User, CheckCircle2, ShieldCheck, Sparkles } from 
 export default function AuthModal() {
   const { isAuthOpen, setIsAuthOpen, showToast } = useCart();
   const [tab, setTab] = useState<'login' | 'register'>('login');
-  
+
   // Login form state
   const [loginIdentifier, setLoginIdentifier] = useState('');
   const [loginPassword, setLoginPassword] = useState('');
@@ -26,7 +26,7 @@ export default function AuthModal() {
     e.preventDefault();
     if (!loginIdentifier) return;
     setLoggedInUser(loginIdentifier);
-    showToast('সফলভাবে লগইন হয়েছে! স্বাগতম গ্রামবাংলায়।');
+    showToast('সফলভাবে লগইন হয়েছে! স্বাগতম শিকড়য়।');
     setTimeout(() => {
       setIsAuthOpen(false);
     }, 1000);
@@ -45,7 +45,7 @@ export default function AuthModal() {
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 animate-fadeIn">
       <div className="relative bg-white rounded-3xl max-w-md w-full shadow-2xl border border-[#244C32]/20 overflow-hidden">
-        
+
         {/* Close Button */}
         <button
           onClick={() => setIsAuthOpen(false)}
@@ -66,17 +66,15 @@ export default function AuthModal() {
           <div className="flex bg-white rounded-xl p-1 border border-gray-200 mt-5">
             <button
               onClick={() => setTab('login')}
-              className={`flex-1 py-2 text-xs font-bold rounded-lg transition-all ${
-                tab === 'login' ? 'bg-[#244C32] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'
-              }`}
+              className={`flex-1 py-2 text-xs font-bold rounded-lg transition-all ${tab === 'login' ? 'bg-[#244C32] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'
+                }`}
             >
               লগইন করুন
             </button>
             <button
               onClick={() => setTab('register')}
-              className={`flex-1 py-2 text-xs font-bold rounded-lg transition-all ${
-                tab === 'register' ? 'bg-[#244C32] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'
-              }`}
+              className={`flex-1 py-2 text-xs font-bold rounded-lg transition-all ${tab === 'register' ? 'bg-[#244C32] text-white shadow-sm' : 'text-gray-600 hover:text-gray-900'
+                }`}
             >
               নতুন রেজিস্ট্রেশন
             </button>

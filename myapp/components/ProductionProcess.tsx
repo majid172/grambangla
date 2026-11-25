@@ -51,7 +51,7 @@ export default function ProductionProcess() {
             <span>আমাদের সনাতন ঐতিহ্য ও সততা</span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#244C32] tracking-tight">
-            কীভাবে তৈরি হয় গ্রামবাংলার খাঁটি খাবার?
+            কীভাবে তৈরি হয় শিকড়র খাঁটি খাবার?
           </h2>
           <p className="mt-3 text-base text-gray-700 leading-relaxed font-normal">
             আমরা কারখানার কৃত্রিম উপায়ে তৈরি কোনো পণ্য দিই না। প্রাচীন বাংলার ঐতিহ্য, সততা এবং সম্পূর্ণ প্রাকৃতিক নিয়মে প্রস্তুত প্রতিটি ফোঁটা তেল ও দানা ঘি।

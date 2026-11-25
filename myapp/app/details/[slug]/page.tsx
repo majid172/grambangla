@@ -20,15 +20,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
   if (!product) {
     return {
-      title: 'পণ্য পাওয়া যায়নি - গ্রামবাংলা',
+      title: 'পণ্য পাওয়া যায়নি - শিকড়',
     };
   }
 
   return {
-    title: `${product.nameBn} - গ্রামবাংলা | খাঁটি খাবার`,
+    title: `${product.nameBn} - শিকড় | খাঁটি খাবার`,
     description: product.shortDescBn,
     openGraph: {
-      title: `${product.nameBn} | গ্রামবাংলা`,
+      title: `${product.nameBn} | শিকড়`,
       description: product.shortDescBn,
       images: [product.image],
     },

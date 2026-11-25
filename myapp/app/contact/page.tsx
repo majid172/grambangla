@@ -74,7 +74,7 @@ function ContactContent() {
     },
     {
       q: 'কুপন কোড কীভাবে ব্যবহার করব?',
-      a: 'কার্ট ড্রয়ার বা চেকআউট পেজে কুপন বক্সে "GRAMBANGLA10" লিখে "প্রয়োগ" বাটনে ক্লিক করলেই আপনার অর্ডারে তাৎক্ষণিক ১০% মূল্য ছাড় যুক্ত হয়ে যাবে।'
+      a: 'কার্ট ড্রয়ার বা চেকআউট পেজে কুপন বক্সে "Shikor10" লিখে "প্রয়োগ" বাটনে ক্লিক করলেই আপনার অর্ডারে তাৎক্ষণিক ১০% মূল্য ছাড় যুক্ত হয়ে যাবে।'
     },
     {
       q: 'পাইকারি বা কর্পোরেট অর্ডারের সুযোগ আছে কি?',
@@ -176,16 +176,16 @@ function ContactContent() {
                 <h3 className="font-extrabold text-base text-[#244C32]">ইমেইল সাপোর্ট</h3>
                 <p className="text-xs text-gray-500 mt-1">যেকোনো সময় ইমেইল পাঠান</p>
                 <div className="mt-3 space-y-1">
-                  <a href="mailto:support@grambangla.com" className="block text-xs sm:text-sm font-extrabold text-[#244C32] hover:underline truncate">
-                    support@grambangla.com
+                  <a href="mailto:support@Shikor.com" className="block text-xs sm:text-sm font-extrabold text-[#244C32] hover:underline truncate">
+                    support@Shikor.com
                   </a>
-                  <a href="mailto:orders@grambangla.com" className="block text-xs font-bold text-gray-600 hover:underline truncate">
-                    orders@grambangla.com
+                  <a href="mailto:orders@Shikor.com" className="block text-xs font-bold text-gray-600 hover:underline truncate">
+                    orders@Shikor.com
                   </a>
                 </div>
               </div>
               <a
-                href="mailto:support@grambangla.com"
+                href="mailto:support@Shikor.com"
                 className="mt-4 text-xs font-bold text-[#8B6E1A] hover:underline flex items-center gap-1"
               >
                 <span>ইমেইল লিখুন</span>
@@ -346,7 +346,7 @@ function ContactContent() {
 
                 <div className="h-64 sm:h-72 w-full rounded-2xl overflow-hidden border border-gray-200 bg-gray-100">
                   <iframe
-                    title="GramBangla Location"
+                    title="Shikor Location"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14608.036944850388!2d90.3671072!3d23.7470487!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8b33cffc3fb%3A0x4a826f475fd312af!2sDhanmondi%2C%20Dhaka%201209!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
                     width="100%"
                     height="100%"

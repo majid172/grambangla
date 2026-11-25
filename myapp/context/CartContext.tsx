@@ -77,13 +77,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     try {
       localStorage.setItem('gb_cart', JSON.stringify(cart));
-    } catch {}
+    } catch { }
   }, [cart]);
 
   useEffect(() => {
     try {
       localStorage.setItem('gb_wishlist', JSON.stringify(wishlist));
-    } catch {}
+    } catch { }
   }, [wishlist]);
 
   const showToast = (msg: string) => {
@@ -158,7 +158,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const applyCoupon = (code: string) => {
     const cleaned = code.trim().toUpperCase();
-    if (cleaned === 'GRAMBANGLA10' || cleaned === 'GB10') {
+    if (cleaned === 'Shikor10' || cleaned === 'GB10') {
       setAppliedCoupon({ code: cleaned, discountPercent: 10 });
       showToast('১০% ডিসকাউন্ট কুপন সফলভাবে যুক্ত হয়েছে! 🎉');
       return true;

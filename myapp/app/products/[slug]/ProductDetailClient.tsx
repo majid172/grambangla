@@ -76,7 +76,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
 
   const handleWhatsAppOrder = () => {
     const text = encodeURIComponent(
-      `হ্যালো গ্রামবাংলা, আমি "${product.nameBn}" (${product.unit}) ${quantity}টি অর্ডার করতে চাই। মূল্য: ৳${product.price * quantity}।`
+      `হ্যালো শিকড়, আমি "${product.nameBn}" (${product.unit}) ${quantity}টি অর্ডার করতে চাই। মূল্য: ৳${product.price * quantity}।`
     );
     window.open(`https://wa.me/8801312617206?text=${text}`, '_blank');
   };
@@ -463,7 +463,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
                       <div className="text-[10px] text-gray-400 mt-1">{product.reviewCount} যাচাইকৃত রিভিউ</div>
                     </div>
                     <p className="text-xs text-gray-600">
-                      আমাদের সকল রিভিউ সরাসরি গ্রামবাংলা থেকে ক্রয়কারী যাচাইকৃত গ্রাহকদের দ্বারা প্রদত্ত। পণ্য ডেলিভারির পর গ্রাহকের সন্তুষ্টি আমাদের শীর্ষ অগ্রাধিকার।
+                      আমাদের সকল রিভিউ সরাসরি শিকড় থেকে ক্রয়কারী যাচাইকৃত গ্রাহকদের দ্বারা প্রদত্ত। পণ্য ডেলিভারির পর গ্রাহকের সন্তুষ্টি আমাদের শীর্ষ অগ্রাধিকার।
                     </p>
                   </div>
                 </div>

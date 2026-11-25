@@ -1,12 +1,12 @@
 'use client';
 
 import React from 'react';
-import { 
-  ShieldCheck, 
-  PackageCheck, 
-  Truck, 
-  Headphones, 
-  Leaf, 
+import {
+  ShieldCheck,
+  PackageCheck,
+  Truck,
+  Headphones,
+  Leaf,
   Sparkles,
   CheckCircle2
 } from 'lucide-react';
@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
   return (
     <section id="why-us" className="py-20 bg-[#F4F1E6] relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        
+
         {/* Section Heading */}
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#244C32] bg-[#244C32]/10 px-3 py-1 rounded-full mb-3">
@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
             <span>আমাদের প্রতিশ্রুতি</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#244C32] tracking-tight">
-            কেন গ্রামবাংলাকে বেছে নেবেন?
+            কেন শিকড়কে বেছে নেবেন?
           </h2>
           <p className="mt-3 text-base text-gray-700">
             আমরা শুধু খাদ্যপণ্য বিক্রি করি না, প্রতিটি পরিবারের কাছে পৌঁছে দিই বিশুদ্ধতা, নিরাপত্তা এবং বাংলার ঐতিহ্যের আসল স্বাদ।
