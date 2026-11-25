@@ -1,17 +1,18 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 import { useCart } from '@/context/CartContext';
 import { PRODUCTS } from '@/data/products';
 import { Product } from '@/types';
-import { Search, X, ShoppingBag, ArrowRight, Star, MapPin } from 'lucide-react';
+import { Search, X, ShoppingBag, MapPin } from 'lucide-react';
 
 export default function SearchModal() {
+  const router = useRouter();
   const { 
     isSearchOpen, 
     setIsSearchOpen, 
-    addToCart, 
-    setSelectedDetailProduct 
+    addToCart 
   } = useCart();
 
   const [query, setQuery] = useState('');
@@ -20,10 +21,11 @@ export default function SearchModal() {
   const suggestions = [
     'সরিষার তেল',
     'গাওয়া ঘি',
+    'পাটালি গুড়',
     'সুন্দরবনের মধু',
     'কালোজিরা চাল',
     'মসুর ডাল',
-    'নারিকেল তেল'
+    'কালোজিরা তেল'
   ];
 
   useEffect(() => {
@@ -105,8 +107,8 @@ export default function SearchModal() {
               <div
                 key={product.id}
                 onClick={() => {
-                  setSelectedDetailProduct(product);
                   setIsSearchOpen(false);
+                  router.push(`/details/${product.slug}`);
                 }}
                 className="group flex items-center justify-between gap-4 p-3 rounded-2xl hover:bg-[#FAF8F0] border border-transparent hover:border-[#244C32]/10 transition-all cursor-pointer"
               >

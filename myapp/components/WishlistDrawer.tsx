@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
 import { X, Heart, ShoppingBag, Trash2, ArrowRight } from 'lucide-react';
 
@@ -65,18 +66,28 @@ export default function WishlistDrawer() {
                   key={product.id}
                   className="flex gap-3 bg-[#FAF8F0] p-3 rounded-2xl border border-gray-100 hover:border-[#244C32]/20 transition-colors"
                 >
-                  <img
-                    src={product.image}
-                    alt={product.nameBn}
-                    className="w-20 h-20 rounded-xl object-cover border border-gray-200 bg-white shrink-0"
-                  />
+                  <Link 
+                    href={`/details/${product.slug}`}
+                    onClick={() => setIsWishlistOpen(false)}
+                    className="shrink-0"
+                  >
+                    <img
+                      src={product.image}
+                      alt={product.nameBn}
+                      className="w-20 h-20 rounded-xl object-cover border border-gray-200 bg-white hover:opacity-90 transition-opacity"
+                    />
+                  </Link>
 
                   <div className="flex-1 flex flex-col justify-between min-w-0">
                     <div>
                       <div className="flex items-start justify-between gap-1">
-                        <h4 className="font-bold text-xs sm:text-sm text-[#244C32] truncate">
+                        <Link 
+                          href={`/details/${product.slug}`}
+                          onClick={() => setIsWishlistOpen(false)}
+                          className="font-bold text-xs sm:text-sm text-[#244C32] hover:text-[#8B6E1A] truncate transition-colors"
+                        >
                           {product.nameBn}
-                        </h4>
+                        </Link>
                         <button
                           onClick={() => toggleWishlist(product)}
                           className="text-gray-400 hover:text-rose-500 transition-colors p-0.5"

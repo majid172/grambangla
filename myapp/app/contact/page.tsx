@@ -11,8 +11,6 @@ import CartDrawer from '@/components/CartDrawer';
 import WishlistDrawer from '@/components/WishlistDrawer';
 import SearchModal from '@/components/SearchModal';
 import AuthModal from '@/components/AuthModal';
-import ProductQuickView from '@/components/ProductQuickView';
-import ProductDetailModal from '@/components/ProductDetailModal';
 import CheckoutModal from '@/components/CheckoutModal';
 import OrderSuccessModal from '@/components/OrderSuccessModal';
 import PolicyModal from '@/components/PolicyModal';
@@ -437,8 +435,6 @@ function ContactContent() {
       <WishlistDrawer />
       <SearchModal />
       <AuthModal />
-      <ProductQuickView />
-      <ProductDetailModal />
       <CheckoutModal />
       <OrderSuccessModal />
       <PolicyModal />

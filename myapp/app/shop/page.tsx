@@ -14,8 +14,6 @@ import CartDrawer from '@/components/CartDrawer';
 import WishlistDrawer from '@/components/WishlistDrawer';
 import SearchModal from '@/components/SearchModal';
 import AuthModal from '@/components/AuthModal';
-import ProductQuickView from '@/components/ProductQuickView';
-import ProductDetailModal from '@/components/ProductDetailModal';
 import CheckoutModal from '@/components/CheckoutModal';
 import OrderSuccessModal from '@/components/OrderSuccessModal';
 import PolicyModal from '@/components/PolicyModal';
@@ -45,8 +43,6 @@ function ShopContent() {
     addToCart, 
     toggleWishlist, 
     isInWishlist, 
-    setSelectedQuickViewProduct, 
-    setSelectedDetailProduct, 
     setIsCheckoutOpen 
   } = useCart();
 
@@ -432,9 +428,9 @@ function ShopContent() {
                           className="bg-white rounded-3xl p-4 sm:p-5 border border-[#244C32]/10 shadow-xs hover:shadow-xl transition-all flex flex-col sm:flex-row gap-5 items-center justify-between group"
                         >
                           {/* Image */}
-                          <div 
-                            className="relative w-full sm:w-48 h-48 rounded-2xl overflow-hidden bg-gray-50 shrink-0 cursor-pointer"
-                            onClick={() => setSelectedDetailProduct(product)}
+                          <Link 
+                            href={`/details/${product.slug}`}
+                            className="relative block w-full sm:w-48 h-48 rounded-2xl overflow-hidden bg-gray-50 shrink-0"
                           >
                             <img
                               src={product.image}
@@ -446,7 +442,7 @@ function ShopContent() {
                                 {product.badge}
                               </span>
                             )}
-                          </div>
+                          </Link>
 
                           {/* Content */}
                           <div className="flex-1 min-w-0 space-y-2 text-center sm:text-left">
@@ -463,11 +459,10 @@ function ShopContent() {
                               </div>
                             </div>
 
-                            <h3 
-                              onClick={() => setSelectedDetailProduct(product)}
-                              className="font-extrabold text-base sm:text-lg text-[#244C32] hover:text-[#8B6E1A] cursor-pointer"
-                            >
-                              {product.nameBn}
+                            <h3 className="font-extrabold text-base sm:text-lg text-[#244C32] hover:text-[#8B6E1A]">
+                              <Link href={`/details/${product.slug}`}>
+                                {product.nameBn}
+                              </Link>
                             </h3>
 
                             <p className="text-xs text-gray-500 font-medium">
@@ -646,8 +641,6 @@ function ShopContent() {
       <WishlistDrawer />
       <SearchModal />
       <AuthModal />
-      <ProductQuickView />
-      <ProductDetailModal />
       <CheckoutModal />
       <OrderSuccessModal />
       <PolicyModal />

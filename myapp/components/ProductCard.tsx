@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Product } from '@/types';
 import { useCart } from '@/context/CartContext';
 import { 
@@ -23,8 +24,6 @@ export default function ProductCard({ product }: ProductCardProps) {
     addToCart, 
     toggleWishlist, 
     isInWishlist, 
-    setSelectedQuickViewProduct,
-    setSelectedDetailProduct,
     setIsCheckoutOpen,
     cart
   } = useCart();
@@ -45,22 +44,21 @@ export default function ProductCard({ product }: ProductCardProps) {
     <div className="group bg-white rounded-3xl overflow-hidden shadow-xs hover:shadow-2xl transition-all duration-300 border border-[#244C32]/12 flex flex-col justify-between transform hover:-translate-y-1 relative">
       
       {/* Top Image Container */}
-      <div 
-        className="relative h-60 sm:h-64 overflow-hidden bg-[#F5F2E9] cursor-pointer" 
-        onClick={() => setSelectedDetailProduct(product)}
-      >
-        <img
-          src={product.image}
-          alt={product.nameBn}
-          className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-500"
-        />
+      <div className="relative h-60 sm:h-64 overflow-hidden bg-[#F5F2E9]">
+        <Link href={`/details/${product.slug}`} className="block h-full w-full">
+          <img
+            src={product.image}
+            alt={product.nameBn}
+            className="w-full h-full object-cover group-hover:scale-106 transition-transform duration-500"
+          />
 
-        {/* Soft Organic Shadow */}
-        <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 opacity-70 group-hover:opacity-50 transition-opacity"></div>
+          {/* Soft Organic Shadow */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-black/10 opacity-70 group-hover:opacity-50 transition-opacity"></div>
+        </Link>
 
         {/* Badge - Top Left */}
         {product.badge && (
-          <div className="absolute top-3 left-3 bg-[#E5B83F] text-[#244C32] text-[11px] font-black px-2.5 py-1 rounded-full shadow-md flex items-center gap-1">
+          <div className="absolute top-3 left-3 bg-[#E5B83F] text-[#244C32] text-[11px] font-black px-2.5 py-1 rounded-full shadow-md flex items-center gap-1 pointer-events-none">
             <Sparkles className="w-3 h-3" />
             <span>{product.badge}</span>
           </div>
@@ -68,7 +66,7 @@ export default function ProductCard({ product }: ProductCardProps) {
 
         {/* Discount Savings Tag */}
         {savings > 0 && (
-          <div className="absolute bottom-3 left-3 bg-[#244C32] text-[#FAF8F0] text-[11px] font-bold px-2 py-0.5 rounded-lg shadow-sm">
+          <div className="absolute bottom-3 left-3 bg-[#244C32] text-[#FAF8F0] text-[11px] font-bold px-2 py-0.5 rounded-lg shadow-sm pointer-events-none">
             ৳{savings} সাশ্রয় ({product.discountPercent}%)
           </div>
         )}
@@ -91,21 +89,19 @@ export default function ProductCard({ product }: ProductCardProps) {
             <Heart className={`w-4 h-4 ${isFavorited ? 'fill-current' : ''}`} />
           </button>
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setSelectedQuickViewProduct(product);
-            }}
+          {/* Direct Link to Details (No Popup!) */}
+          <Link
+            href={`/details/${product.slug}`}
             className="w-9 h-9 rounded-full bg-white/90 text-gray-700 hover:text-[#244C32] hover:bg-white flex items-center justify-center transition-all duration-300 shadow-md opacity-90 group-hover:opacity-100"
-            title="এক নজরে দেখুন"
-            aria-label="Quick View"
+            title="বিস্তারিত দেখুন"
+            aria-label="View Details"
           >
             <Eye className="w-4 h-4" />
-          </button>
+          </Link>
         </div>
 
         {/* Regional Origin Pill */}
-        <div className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full flex items-center gap-1">
+        <div className="absolute bottom-3 right-3 bg-black/60 backdrop-blur-md text-white text-[11px] font-medium px-2.5 py-0.5 rounded-full flex items-center gap-1 pointer-events-none">
           <MapPin className="w-3 h-3 text-[#E5B83F]" />
           <span>{product.sourceLocation}</span>
         </div>
@@ -126,12 +122,11 @@ export default function ProductCard({ product }: ProductCardProps) {
             </span>
           </div>
 
-          {/* Bengali Title */}
-          <h3 
-            onClick={() => setSelectedDetailProduct(product)}
-            className="font-extrabold text-base sm:text-lg text-[#244C32] hover:text-[#8B6E1A] transition-colors leading-snug cursor-pointer line-clamp-2"
-          >
-            {product.nameBn}
+          {/* Bengali Title linked to /details/[slug] */}
+          <h3 className="font-extrabold text-base sm:text-lg text-[#244C32] hover:text-[#8B6E1A] transition-colors leading-snug line-clamp-2">
+            <Link href={`/details/${product.slug}`}>
+              {product.nameBn}
+            </Link>
           </h3>
 
           <p className="text-[11px] text-gray-500 mt-0.5 line-clamp-1 font-medium">
