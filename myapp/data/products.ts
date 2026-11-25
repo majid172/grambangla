@@ -67,16 +67,16 @@ export const PRODUCTS: Product[] = [
   {
     id: 'gb-1',
     slug: 'cold-pressed-mustard-oil-1l',
-    nameBn: 'কাঠের ঘানিভাঙা সরিষার তেল – ১ লিটার',
+    nameBn: 'সরিষার তেল – ১ লিটার',
     nameEn: 'Traditional Cold Pressed Mustard Oil – 1L',
     category: 'mustard-oil',
-    categoryNameBn: 'ঘানিভাঙা সরিষার তেল',
-    shortDescBn: 'সিরাজগঞ্জের মাঠ থেকে বাছাই করা মাঘী সরিষা। কাঠের ঘানিতে ধীর গতিতে কোল্ড-প্রেসড করায় প্রাকৃতিক ঝাঁঝ ও ভিটামিন ই পুরোপুরি অক্ষুণ্ণ।',
-    fullDescBn: 'আমাদের এই তেল সিরাজগঞ্জের তাড়াশ উপজেলার স্থানীয় কৃষকদের সংগৃহীত সেরা জাতের মাঘী সরিষা থেকে প্রস্তুত করা হয়। আধুনিক স্টিল মেশিনে অতিরিক্ত তাপমাত্রায় তেলের পুষ্টি নষ্ট হয়, তাই আমরা ব্যবহার করি সনাতন কাঠের ঘানি। কোনো প্রকার ভেজাল, সয়াবিন মিশ্রণ বা কৃত্রিম সুগন্ধি ছাড়াই বোতলজাত করা হয়। খাঁটি সরিষার আসল ঝাঁঝ ও স্বাদে আপনার পরিবারের রান্না হবে সুস্বাদু ও নিরাপদ।',
-    price: 360,
-    originalPrice: 420,
+    categoryNameBn: 'সরিষার তেল',
+    shortDescBn: ' মাঠ থেকে বাছাই করা মাঘী সরিষা। কাঠের ঘানিতে ধীর গতিতে কোল্ড-প্রেসড করায় প্রাকৃতিক ঝাঁঝ ও ভিটামিন ই পুরোপুরি অক্ষুণ্ণ।',
+    fullDescBn: 'আমাদের এই তেল স্থানীয় কৃষকদের সংগৃহীত সেরা জাতের মাঘী সরিষা থেকে প্রস্তুত করা হয়। আধুনিক স্টিল মেশিনে অতিরিক্ত তাপমাত্রায় তেলের পুষ্টি নষ্ট হয়, তাই আমরা ব্যবহার করি সনাতন কাঠের ঘানি। কোনো প্রকার ভেজাল, সয়াবিন মিশ্রণ বা কৃত্রিম সুগন্ধি ছাড়াই বোতলজাত করা হয়। খাঁটি সরিষার আসল ঝাঁঝ ও স্বাদে আপনার পরিবারের রান্না হবে সুস্বাদু ও নিরাপদ।',
+    price: 240,
+    originalPrice: 260,
     discountPercent: 14,
-    unit: '১ লিটার কাঁচের বোতল',
+    unit: '১ লিটার বোতল',
     inStock: true,
     stockCount: 45,
     rating: 4.9,
@@ -87,8 +87,8 @@ export const PRODUCTS: Product[] = [
     image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
     gallery: [
       'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1515543237350-b3eea1ec8082?auto=format&fit=crop&w=800&q=80'
+      'https://img.drz.lazcdn.com/static/bd/p/37ca830c01e1f9fcf89e784e64a75299.jpg_960x960q80.jpg_.webp'
+
     ],
     badge: 'সেরা বিক্রয়',
     sourceLocation: 'তাড়াশ, সিরাজগঞ্জ',
@@ -212,7 +212,7 @@ export const DEMO_REVIEWS: Review[] = [
     commentBn: 'শিকড়র কাঠের ঘানিভাঙা সরিষার তেল আসলেই অন্য লেভেলের! বোতল খুললেই মাটির সোঁদা গন্ধ আর আসল সরিষার তীব্র ঝাঁঝ পাওয়া যায়। মাটির হাঁড়ির ঘিটাও গরম ভাতে জাস্ট অমৃত। নিয়মিত অর্ডার করব ইনশাআল্লাহ।',
     verifiedBuyer: true,
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80',
-    purchasedProduct: 'কাঠের ঘানিভাঙা সরিষার তেল – ১ লিটার'
+    purchasedProduct: 'সরিষার তেল – ১ লিটার'
   },
   {
     id: 'rev-2',
