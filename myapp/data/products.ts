@@ -102,16 +102,16 @@ export const PRODUCTS: Product[] = [
   {
     id: 'gb-2',
     slug: 'pure-desi-ghee-500g',
-    nameBn: 'পাবনার খাঁটি দানাদার গাওয়া ঘি – ৫০০ গ্রাম',
+    nameBn: 'খাঁটি দানাদার গাওয়া ঘি – ৫০০ গ্রাম',
     nameEn: 'Pabna Traditional Desi Ghee – 500g',
     category: 'ghee',
     categoryNameBn: 'গাওয়া ও বিলোড়ন ঘি',
-    shortDescBn: 'পাবনার চাটমোহরে মুক্ত চারণভূমির দেশি গাভীর দুধের মাখন থেকে তৈরি। ঐতিহ্যবাহী মাটির হাঁড়িতে জ্বাল দেওয়া স্বর্গীয় সোনালী সুবাস।',
-    fullDescBn: 'পাবনার সবুজ চারণভূমির প্রাকৃতিক ঘাস খাওয়া দেশি গাভীর তাজা দুধ থেকে সনাতনী বিলোড়ন পদ্ধতিতে মাখন সংগ্রহ করা হয়। মাটির হাঁড়িতে ধীর আঁচে জ্বাল দিয়ে তৈরি হয় গ্রামবাংলা খাঁটি গাওয়া ঘি। অতুলনীয় দানাদার টেক্সচার, প্রাকৃতিক সোনালী আভা এবং স্বর্গীয় সুবাসে গরম ভাত, খিচুড়ি কিংবা হালুয়ার স্বাদ বেড়ে যায় বহুগুণ।',
+    shortDescBn: 'মুক্ত চারণভূমির দেশি গাভীর দুধের মাখন থেকে তৈরি। ঐতিহ্যবাহী মাটির হাঁড়িতে জ্বাল দেওয়া স্বর্গীয় সোনালী সুবাস।',
+    fullDescBn: ' প্রাকৃতিক ঘাস খাওয়া দেশি গাভীর তাজা দুধ থেকে সনাতনী বিলোড়ন পদ্ধতিতে মাখন সংগ্রহ করা হয়। মাটির হাঁড়িতে ধীর আঁচে জ্বাল দিয়ে তৈরি হয় গ্রামবাংলা খাঁটি গাওয়া ঘি। অতুলনীয় দানাদার টেক্সচার, প্রাকৃতিক সোনালী আভা এবং স্বর্গীয় সুবাসে গরম ভাত, খিচুড়ি কিংবা হালুয়ার স্বাদ বেড়ে যায় বহুগুণ।',
     price: 950,
     originalPrice: 1100,
     discountPercent: 14,
-    unit: '৫০০ গ্রাম ফুডগ্রেড কাঁচের জার',
+    unit: '৫০০ গ্রাম ',
     inStock: true,
     stockCount: 32,
     rating: 5.0,
@@ -119,13 +119,13 @@ export const PRODUCTS: Product[] = [
     featured: true,
     isBestseller: true,
     organicCertified: true,
-    image: 'https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=800&q=80',
+    image: 'https://static.wixstatic.com/media/06d2aa_b2fe93da32f54827bacf64fca9ae8bb8~mv2.jpg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/06d2aa_b2fe93da32f54827bacf64fca9ae8bb8~mv2.jpg',
     gallery: [
-      'https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=800&q=80',
-      'https://images.unsplash.com/photo-1589927986089-35812388d1f4?auto=format&fit=crop&w=800&q=80'
+      'https://static.wixstatic.com/media/06d2aa_b2fe93da32f54827bacf64fca9ae8bb8~mv2.jpg/v1/fill/w_568,h_378,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/06d2aa_b2fe93da32f54827bacf64fca9ae8bb8~mv2.jpg',
+      'https://compartir.coop/sites/default/files/2026-04/preparar-ghee.webp'
     ],
     badge: 'প্রিমিয়াম কোয়ালিটি',
-    sourceLocation: 'চাটমোহর, পাবনা',
+    sourceLocation: '-, -',
     nutritionalHighlights: [
       '১০০% দেশি গাভীর দুধের খাঁটি মাখন থেকে তৈরি',
       'প্রাকৃতিক দানাদার টেক্সচার ও অরিজিনাল সুবাস',
