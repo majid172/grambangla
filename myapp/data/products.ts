@@ -4,7 +4,7 @@ export const CATEGORIES: Category[] = [
   {
     id: '1',
     slug: 'mustard-oil',
-    nameBn: 'ঘানিভাঙা সরিষার তেল',
+    nameBn: 'সরিষার তেল',
     nameEn: 'Cold Pressed Mustard Oil',
     image: 'https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80',
     itemCount: 8,
@@ -16,17 +16,17 @@ export const CATEGORIES: Category[] = [
     slug: 'ghee',
     nameBn: 'গাওয়া ও বিলোড়ন ঘি',
     nameEn: 'Grass-fed Desi Ghee',
-    image: 'https://images.unsplash.com/photo-1631451095765-2c91616fc9e6?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg',
     itemCount: 6,
-    descriptionBn: 'পাবনার চাটমোহরে দেশি গাভীর খাঁটি দুধের মাখন থেকে তৈরি দানাদার সুবাসিত ঘি',
+    descriptionBn: 'দেশি গাভীর খাঁটি দুধের মাখন থেকে তৈরি দানাদার সুবাসিত ঘি',
     tagline: 'মাটির হাঁড়িতে মৃদু আঁচে তৈরি'
   },
   {
     id: '3',
     slug: 'honey',
-    nameBn: 'সুন্দরবনের প্রাকৃতিক মধু',
+    nameBn: 'প্রাকৃতিক মধু',
     nameEn: 'Sundarbans Wild Honey',
-    image: 'https://images.unsplash.com/photo-1587049352846-4a222e784d38?auto=format&fit=crop&w=800&q=80',
+    image: 'https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75',
     itemCount: 5,
     descriptionBn: 'সুন্দরবনের গভীর অরণ্য ও খলিশা ফুলের অপরিশোধিত কাঁচা এনজাইম সমৃদ্ধ মধু',
     tagline: '১০০% কাঁচা ও আনপ্রসেসড'
@@ -34,9 +34,9 @@ export const CATEGORIES: Category[] = [
   {
     id: '4',
     slug: 'gur',
-    nameBn: 'যশোরের খেজুরের গুড়',
+    nameBn: 'খেজুরের গুড়',
     nameEn: 'Authentic Date Jaggery',
-    image: 'https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=800&q=80',
+    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLtBXSxGFZMinsYa4GyfhGj2QssMc__87lV6plIEuv9zulQOdeDJ4qV8&s=10',
     itemCount: 4,
     descriptionBn: 'যশোরের ঐতিহ্যবাহী গাছিদের হাতে তৈরি খাঁটি নলেন গুড় ও সুস্বাদু পাটালি',
     tagline: 'শীতের আসল প্রাকৃতিক মিষ্টি'
