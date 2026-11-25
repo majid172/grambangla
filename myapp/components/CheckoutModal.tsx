@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { useCart } from '@/context/CartContext';
 import { OrderDetails } from '@/types';
+import { trackPurchase } from '@/lib/fpixel';
 import { 
   X, 
   Truck, 
@@ -73,6 +74,17 @@ export default function CheckoutModal() {
     };
 
     setTimeout(() => {
+      // Meta Pixel: Track completed purchase
+      trackPurchase({
+        orderId: newOrder.orderId,
+        items: cart.map((i) => ({
+          id: i.product.id,
+          price: i.product.price,
+          quantity: i.quantity,
+        })),
+        total: grandTotal,
+      });
+
       clearCart();
       setCompletedOrder(newOrder);
       setIsSubmitting(false);

@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Product } from '@/types';
 import { CartProvider, useCart } from '@/context/CartContext';
+import { trackViewContent, trackContact } from '@/lib/fpixel';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ProductCard from '@/components/ProductCard';
@@ -62,6 +63,16 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
   const isFavorited = isInWishlist(product.id);
   const savings = product.originalPrice ? product.originalPrice - product.price : 0;
 
+  // Meta Pixel: Track ViewContent when customer views product details
+  useEffect(() => {
+    trackViewContent({
+      id: product.id,
+      name: product.nameBn,
+      category: product.category,
+      price: product.price,
+    });
+  }, [product]);
+
   const handleBuyNow = () => {
     addToCart(product, quantity);
     setIsCheckoutOpen(true);
@@ -75,6 +86,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
   };
 
   const handleWhatsAppOrder = () => {
+    trackContact('whatsapp', 'product_detail');
     const text = encodeURIComponent(
       `হ্যালো গ্রামবাংলা, আমি "${product.nameBn}" (${product.unit}) ${quantity}টি অর্ডার করতে চাই। মূল্য: ৳${product.price * quantity}।`
     );
@@ -303,6 +315,7 @@ function ProductDetailContent({ product, relatedProducts }: ProductDetailClientP
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
                     <a
                       href="tel:+8801700123456"
+                      onClick={() => trackContact('call', 'product_detail')}
                       className="h-10 px-3 bg-gray-50/80 hover:bg-gray-100 border border-gray-200 text-gray-700 hover:text-[#244C32] rounded-lg text-xs font-semibold flex items-center justify-center gap-2 transition-colors"
                     >
                       <PhoneCall className="w-3.5 h-3.5 text-[#244C32]" />

@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Product, CartItem, OrderDetails } from '@/types';
+import { trackAddToCart } from '@/lib/fpixel';
 
 interface CartContextType {
   cart: CartItem[];
@@ -93,6 +94,15 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   };
 
   const addToCart = (product: Product, quantity = 1) => {
+    // Meta Pixel Event
+    trackAddToCart({
+      id: product.id,
+      name: product.nameBn,
+      category: product.category,
+      price: product.price,
+      quantity,
+    });
+
     setCart((prev) => {
       const existing = prev.find((item) => item.product.id === product.id);
       if (existing) {

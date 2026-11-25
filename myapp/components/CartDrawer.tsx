@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { useCart } from '@/context/CartContext';
+import { trackInitiateCheckout } from '@/lib/fpixel';
 import { 
   X, 
   Trash2, 
@@ -49,6 +50,16 @@ export default function CartDrawer() {
   };
 
   const handleProceedToCheckout = () => {
+    // Meta Pixel: Track checkout initiation
+    trackInitiateCheckout(
+      cart.map((item) => ({
+        id: item.product.id,
+        price: item.product.price,
+        quantity: item.quantity,
+      })),
+      finalTotal
+    );
+
     setIsCartOpen(false);
     setIsCheckoutOpen(true);
   };

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import FacebookPixel from "@/components/FacebookPixel";
 
 export const metadata: Metadata = {
   title: "গ্রামবাংলা | খাঁটি খাবার, বাংলার স্বাদ - GramBangla Organic Food",
@@ -30,6 +31,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
       </head>
       <body className="min-h-screen flex flex-col bg-[#FAF8F0] text-[#252B25] antialiased selection:bg-[#E5B83F]/30 selection:text-[#244C32]">
+        <FacebookPixel />
         {children}
       </body>
     </html>

@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { MessageCircle, X, Send, Leaf } from 'lucide-react';
+import { trackContact } from '@/lib/fpixel';
 
 export default function WhatsAppButton() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,6 +10,7 @@ export default function WhatsAppButton() {
 
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
+    trackContact('whatsapp', 'floating_widget');
     const encoded = encodeURIComponent(message || 'হ্যালো গ্রামবাংলা, আমি কিছু তথ্য জানতে চাচ্ছি।');
     window.open(`https://wa.me/8801700123456?text=${encoded}`, '_blank');
     setMessage('');
