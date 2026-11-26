@@ -40,15 +40,11 @@ export default function FacebookPixel() {
           `,
         }}
       />
-      <noscript>
-        <img
-          height="1"
-          width="1"
-          style={{ display: 'none' }}
-          src={`https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1`}
-          alt="facebook-pixel"
-        />
-      </noscript>
+      <noscript
+        dangerouslySetInnerHTML={{
+          __html: `<img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=${pixelId}&ev=PageView&noscript=1" alt="facebook-pixel" />`,
+        }}
+      />
       <Suspense fallback={null}>
         <FacebookPixelTracking />
       </Suspense>

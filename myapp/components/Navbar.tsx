@@ -30,8 +30,10 @@ export default function Navbar() {
 
   const [isScrolled, setIsScrolled] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
+    setMounted(true);
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 30);
     };
@@ -43,7 +45,7 @@ export default function Navbar() {
     { name: 'হোম', href: '/' },
     { name: 'শপ', href: '/shop' },
     { name: 'ক্যাটাগরি', href: '/categories' },
-    { name: 'কেন শিকড়', href: '/#why-us' },
+    { name: 'কেন গ্রামবাংলা', href: '/#why-us' },
     { name: 'গ্রাহক মতামত', href: '/#reviews' },
     { name: 'যোগাযোগ', href: '/contact' },
   ];
@@ -94,7 +96,7 @@ export default function Navbar() {
               <div className="flex flex-col">
                 <div className="flex items-center gap-1">
                   <span className="font-extrabold text-2xl sm:text-2xl tracking-tight text-[#244C32]">
-                    শিকড়
+                    গ্রামবাংলা
                   </span>
                   <span className="text-xs bg-[#E5B83F]/30 text-[#244C32] font-bold px-1.5 py-0.5 rounded">
                     অর্গানিক
@@ -139,22 +141,22 @@ export default function Navbar() {
                 aria-label="Wishlist"
               >
                 <Heart className="w-5 h-5" />
-                {wishlistCount > 0 && (
+                {mounted && wishlistCount > 0 && (
                   <span className="absolute 1 top-1 right-1 w-4 h-4 bg-[#E5B83F] text-[#244C32] text-[10px] font-bold rounded-full flex items-center justify-center shadow-sm">
                     {wishlistCount}
                   </span>
                 )}
               </button>
 
-              {/* User Account Button */}
-              <button
-                onClick={() => setIsAuthOpen(true)}
+              {/* User Account / Admin Button */}
+              <Link
+                href="/admin"
                 className="p-2.5 rounded-full hover:bg-[#244C32]/10 text-[#244C32] transition-colors"
-                title="আমার একাউন্ট"
-                aria-label="Account"
+                title="অ্যাডমিন প্যানেল / একাউন্ট"
+                aria-label="Admin and Account"
               >
                 <User className="w-5 h-5" />
-              </button>
+              </Link>
 
               {/* Cart Drawer Trigger */}
               <button
@@ -164,7 +166,7 @@ export default function Navbar() {
                 aria-label="Cart"
               >
                 <ShoppingBag className="w-5 h-5" />
-                {cartCount > 0 && (
+                {mounted && cartCount > 0 && (
                   <span className="absolute -top-1 -right-1 w-5 h-5 bg-[#E5B83F] text-[#244C32] text-xs font-black rounded-full flex items-center justify-center shadow-md animate-pulse">
                     {cartCount}
                   </span>

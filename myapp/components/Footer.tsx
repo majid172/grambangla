@@ -200,9 +200,16 @@ export default function Footer() {
 
         {/* Bottom Bar & Policies */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-400">
-          <p>© {new Date().getFullYear()} শিকড় (Shikor). সর্বস্বত্ব সংরক্ষিত।</p>
+          <p suppressHydrationWarning>© 2026 গ্রামবাংলা (GramBangla). সর্বস্বত্ব সংরক্ষিত।</p>
 
           <div className="flex flex-wrap items-center gap-4 text-gray-300">
+            <Link
+              href="/admin"
+              className="text-[#E5B83F] font-bold hover:underline"
+            >
+              অ্যাডমিন পোর্টাল
+            </Link>
+            <span>•</span>
             <button
               onClick={() => setPolicyModal('privacy')}
               className="hover:text-[#E5B83F] transition-colors"

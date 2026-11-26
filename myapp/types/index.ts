@@ -67,6 +67,6 @@ export interface OrderDetails {
   deliveryFee: number;
   discount: number;
   total: number;
-  status: 'Pending' | 'Confirmed' | 'Processing';
+  status: 'Pending' | 'Confirmed' | 'Processing' | 'Delivered' | 'Cancelled';
   orderDate: string;
 }

@@ -85,6 +85,12 @@ export default function CheckoutModal() {
         total: grandTotal,
       });
 
+      // Save to Admin Orders Store
+      try {
+        const saved = JSON.parse(localStorage.getItem('gb_admin_orders') || '[]');
+        localStorage.setItem('gb_admin_orders', JSON.stringify([newOrder, ...saved]));
+      } catch {}
+
       clearCart();
       setCompletedOrder(newOrder);
       setIsSubmitting(false);
