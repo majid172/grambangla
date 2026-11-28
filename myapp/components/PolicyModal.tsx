@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { useCart } from '@/context/CartContext';
@@ -30,7 +30,7 @@ export default function PolicyModal() {
               <h3 className="text-xl font-bold">গোপনীয়তা নীতি (Privacy Policy)</h3>
             </div>
             <p>
-              শিকড় (Shikor) আমাদের গ্রাহকদের তথ্যের গোপনীয়তাকে সর্বোচ্চ গুরুত্ব দিয়ে থাকে। আপনার নাম, মোবাইল নম্বর এবং ডেলিভারি ঠিকানা শুধুমাত্র আপনার কাছে পণ্য সঠিকভাবে পৌঁছে দেওয়ার উদ্দেশ্যে সংরক্ষিত ও ব্যবহৃত হয়।
+              গ্রামবাংলা (GramBangla) আমাদের গ্রাহকদের তথ্যের গোপনীয়তাকে সর্বোচ্চ গুরুত্ব দিয়ে থাকে। আপনার নাম, মোবাইল নম্বর এবং ডেলিভারি ঠিকানা শুধুমাত্র আপনার কাছে পণ্য সঠিকভাবে পৌঁছে দেওয়ার উদ্দেশ্যে সংরক্ষিত ও ব্যবহৃত হয়।
             </p>
             <h4 className="font-bold text-[#244C32]">আমরা কী কী তথ্য সংগ্রহ করি:</h4>
             <ul className="list-disc pl-5 space-y-1">
@@ -51,7 +51,7 @@ export default function PolicyModal() {
               <h3 className="text-xl font-bold">ব্যবহারের শর্তাবলী (Terms & Conditions)</h3>
             </div>
             <p>
-              শিকড় ওয়েবসাইট থেকে যেকোনো পণ্য অর্ডার করার মাধ্যমে আপনি আমাদের শর্তাবলীর সাথে সম্মত হন।
+              গ্রামবাংলা ওয়েবসাইট থেকে যেকোনো পণ্য অর্ডার করার মাধ্যমে আপনি আমাদের শর্তাবলীর সাথে সম্মত হন।
             </p>
             <ul className="list-disc pl-5 space-y-2">
               <li><strong>মূল্য ও স্টক:</strong> ওয়েবসাইটের সকল মূল্য টাকায় (৳) প্রদর্শিত। পণ্যের স্টক ও অঞ্চলভিত্তিক প্রাপ্যতা অনুসারে যেকোনো সময় আপডেট হতে পারে।</li>
@@ -93,3 +93,4 @@ export default function PolicyModal() {
     </div>
   );
 }
+

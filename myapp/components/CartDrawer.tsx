@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -125,7 +125,7 @@ export default function CartDrawer() {
                 </div>
                 <h4 className="font-bold text-[#244C32] text-lg">আপনার ব্যাগ খালি</h4>
                 <p className="text-xs text-gray-500 max-w-xs">
-                  শিকড়র খাঁটি সরিষার তেল, ঘি বা মধু যুক্ত করে আপনার সুস্থ জীবনের যাত্রা শুরু করুন।
+                  গ্রামবাংলার খাঁটি সরিষার তেল, ঘি বা মধু যুক্ত করে আপনার সুস্থ জীবনের যাত্রা শুরু করুন।
                 </p>
                 <button
                   onClick={() => setIsCartOpen(false)}
@@ -230,7 +230,7 @@ export default function CartDrawer() {
                     type="text"
                     value={couponCode}
                     onChange={(e) => setCouponCode(e.target.value)}
-                    placeholder="কুপন কোড লিখুন (যেমন Shikor10)"
+                    placeholder="কুপন কোড লিখুন (যেমন GRAMBANGLA10)"
                     className="flex-1 text-xs bg-gray-50 border border-gray-300 rounded-xl px-3 py-2.5 focus:outline-none focus:border-[#244C32] font-semibold uppercase"
                   />
                   <button
@@ -285,3 +285,4 @@ export default function CartDrawer() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import {
@@ -31,7 +31,7 @@ export default function WhyChooseUs() {
             <span>আমাদের প্রতিশ্রুতি</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-[#244C32] tracking-tight">
-            কেন শিকড়কে বেছে নেবেন?
+            কেন গ্রামবাংলাকে বেছে নেবেন?
           </h2>
           <p className="mt-3 text-base text-gray-700">
             আমরা শুধু খাদ্যপণ্য বিক্রি করি না, প্রতিটি পরিবারের কাছে পৌঁছে দিই বিশুদ্ধতা, নিরাপত্তা এবং বাংলার ঐতিহ্যের আসল স্বাদ।
@@ -98,3 +98,4 @@ export default function WhyChooseUs() {
     </section>
   );
 }
+

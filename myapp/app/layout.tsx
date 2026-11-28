@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import FacebookPixel from "@/components/FacebookPixel";
 
 export const metadata: Metadata = {
-  title: "গ্রামবাংলা | খাঁটি খাবার, বাংলার স্বাদ - GramBangla Organic Food",
+  title: "গ্রামবাংলা | খাঁটি খাবার, বাংলার স্বাদ - গ্রামবাংলা Organic Food",
   description: "গ্রামবাংলা (GramBangla) - খাঁটি সরিষার তেল, ঘি, সুন্দরবনের মধু এবং শতভাগ বিশুদ্ধ দেশীয় খাবার সরাসরি আপনার ঘরে। Premium Organic & Traditional Bangladeshi Food.",
-  keywords: ["গ্রামবাংলা", "GramBangla", "সরিষার তেল", "খাঁটি ঘি", "সুন্দরবনের মধু", "দেশি চাল", "অর্গানিক ফুড", "Bangladeshi organic food", "Pure Mustard Oil", "Desi Ghee"],
+  keywords: ["গ্রামবাংলা", "গ্রামবাংলা", "সরিষার তেল", "খাঁটি ঘি", "সুন্দরবনের মধু", "দেশি চাল", "অর্গানিক ফুড", "Bangladeshi organic food", "Pure Mustard Oil", "Desi Ghee"],
   openGraph: {
     title: "গ্রামবাংলা | খাঁটি খাবার, বাংলার স্বাদ",
     description: "প্রকৃতির বিশুদ্ধতা, আপনার পরিবারের জন্য। ১০০% খাঁটি ও ঐতিহ্যবাহী দেশীয় খাবার।",
@@ -30,7 +30,7 @@ export default function RootLayout({
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
       </head>
-      <body 
+      <body
         suppressHydrationWarning
         className="min-h-screen flex flex-col bg-[#FAF8F0] text-[#252B25] antialiased selection:bg-[#E5B83F]/30 selection:text-[#244C32]"
       >
@@ -40,3 +40,4 @@ export default function RootLayout({
     </html>
   );
 }
+

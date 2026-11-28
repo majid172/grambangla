@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import { useCart } from '@/context/CartContext';
@@ -26,7 +26,7 @@ export default function AuthModal() {
     e.preventDefault();
     if (!loginIdentifier) return;
     setLoggedInUser(loginIdentifier);
-    showToast('সফলভাবে লগইন হয়েছে! স্বাগতম শিকড়য়।');
+    showToast('সফলভাবে লগইন হয়েছে! স্বাগতম গ্রামবাংলায়।');
     setTimeout(() => {
       setIsAuthOpen(false);
     }, 1000);
@@ -208,3 +208,4 @@ export default function AuthModal() {
     </div>
   );
 }
+

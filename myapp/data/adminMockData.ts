@@ -1,4 +1,4 @@
-import { OrderDetails } from '@/types';
+﻿import { OrderDetails } from '@/types';
 import { PRODUCTS } from './products';
 
 export interface AdminCustomer {
@@ -41,7 +41,7 @@ export const INITIAL_STORE_SETTINGS: StoreSettings = {
   storeName: 'গ্রামবাংলা (GramBangla)',
   hotline: '01700-123456',
   whatsapp: '01700-123456',
-  email: 'support@grambangla.com',
+  email: 'support@গ্রামবাংলা.com',
   address: 'হাউজ #৪২, রোড #১১, ধানমন্ডি, ঢাকা - ১২০৯',
   deliveryDhaka: 70,
   deliveryOutside: 130,
@@ -280,3 +280,4 @@ export const INITIAL_ADMIN_CUSTOMERS: AdminCustomer[] = [
     lastOrderDate: '২৩ নভেম্বর, ২০২৬',
   },
 ];
+

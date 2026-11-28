@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import { CartProvider } from '@/context/CartContext';
@@ -50,7 +50,7 @@ function MainShopApp() {
         {/* 4. Traditional Production Process (Authentic Craftsmanship) */}
         <ProductionProcess />
 
-        {/* 5. Why Choose Shikor (Quality & Purity Trust) */}
+        {/* 5. Why Choose GramBangla (Quality & Purity Trust) */}
         <WhyChooseUs />
 
         {/* 6. Promotional Banner with Coupon */}
@@ -89,3 +89,4 @@ export default function Home() {
     </CartProvider>
   );
 }
+

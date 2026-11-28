@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import {
@@ -108,7 +108,7 @@ export default function Hero() {
                 <img className="w-8 h-8 rounded-full border-2 border-white object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&q=80" alt="Customer" />
               </div>
               <div className="font-semibold text-gray-800">
-                <strong className="text-[#244C32] font-black">১২,৫০০+ পরিবার</strong> ঢাকা ও সারা দেশে নিয়মিত শিকড়র খাদ্যপণ্য গ্রহণ করছেন।
+                <strong className="text-[#244C32] font-black">১২,৫০০+ পরিবার</strong> ঢাকা ও সারা দেশে নিয়মিত গ্রামবাংলার খাদ্যপণ্য গ্রহণ করছেন।
               </div>
             </div>
 
@@ -126,7 +126,7 @@ export default function Hero() {
                 <div className="relative h-80 sm:h-96 md:h-[430px] rounded-2xl overflow-hidden group">
                   <img
                     src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=1200&q=85"
-                    alt="শিকড় খাঁটি সরিষার তেল ও গ্রামীণ ঐতিহ্য"
+                    alt="গ্রামবাংলা খাঁটি সরিষার তেল ও গ্রামীণ ঐতিহ্য"
                     className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700"
                   />
 
@@ -185,3 +185,4 @@ export default function Hero() {
     </section>
   );
 }
+

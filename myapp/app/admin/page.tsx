@@ -1,52 +1,52 @@
-'use client';
+﻿'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
-import { 
-  Product, 
-  OrderDetails, 
-  CartItem 
+import {
+  Product,
+  OrderDetails,
+  CartItem
 } from '@/types';
 import { PRODUCTS as INITIAL_PRODUCTS } from '@/data/products';
-import { 
-  INITIAL_ADMIN_ORDERS, 
-  INITIAL_ADMIN_CUSTOMERS, 
-  INITIAL_ADMIN_COUPONS, 
+import {
+  INITIAL_ADMIN_ORDERS,
+  INITIAL_ADMIN_CUSTOMERS,
+  INITIAL_ADMIN_COUPONS,
   INITIAL_STORE_SETTINGS,
   AdminCustomer,
   AdminCoupon,
   StoreSettings
 } from '@/data/adminMockData';
-import { 
-  LayoutDashboard, 
-  ShoppingBag, 
-  Package, 
-  Users, 
-  Tag, 
-  Settings, 
-  LogOut, 
-  Plus, 
-  Search, 
-  Filter, 
-  Eye, 
-  Trash2, 
-  CheckCircle2, 
-  Clock, 
-  Truck, 
-  XCircle, 
-  Printer, 
-  MessageCircle, 
-  Phone, 
-  ExternalLink, 
-  Menu, 
-  X, 
-  TrendingUp, 
-  DollarSign, 
-  AlertCircle, 
-  ArrowUpRight, 
-  Save, 
-  Leaf, 
-  Layers, 
+import {
+  LayoutDashboard,
+  ShoppingBag,
+  Package,
+  Users,
+  Tag,
+  Settings,
+  LogOut,
+  Plus,
+  Search,
+  Filter,
+  Eye,
+  Trash2,
+  CheckCircle2,
+  Clock,
+  Truck,
+  XCircle,
+  Printer,
+  MessageCircle,
+  Phone,
+  ExternalLink,
+  Menu,
+  X,
+  TrendingUp,
+  DollarSign,
+  AlertCircle,
+  ArrowUpRight,
+  Save,
+  Leaf,
+  Layers,
   Lock,
   ChevronDown,
   Bell,
@@ -57,7 +57,7 @@ import {
 export default function AdminPage() {
   // Authentication State
   const [isAuthenticated, setIsAuthenticated] = useState(true);
-  const [loginEmail, setLoginEmail] = useState('admin@grambangla.com');
+  const [loginEmail, setLoginEmail] = useState('admin@গ্রামবাংলা.com');
   const [loginPassword, setLoginPassword] = useState('admin123');
   const [authError, setAuthError] = useState('');
 
@@ -148,12 +148,12 @@ export default function AdminPage() {
     setOrders(newOrders);
     try {
       localStorage.setItem('gb_admin_orders', JSON.stringify(newOrders));
-    } catch {}
+    } catch { }
   };
 
   // Handle Order Status Change
   const handleStatusChange = (orderId: string, newStatus: OrderDetails['status']) => {
-    const updated = orders.map((ord) => 
+    const updated = orders.map((ord) =>
       ord.orderId === orderId ? { ...ord, status: newStatus } : ord
     );
     updateOrdersState(updated);
@@ -214,7 +214,7 @@ export default function AdminPage() {
     setProducts(updated);
     try {
       localStorage.setItem('gb_admin_products', JSON.stringify(updated));
-    } catch {}
+    } catch { }
 
     setIsAddProductOpen(false);
     showToast(`নতুন পণ্য "${newProdNameBn}" সফলভাবে যুক্ত হয়েছে!`);
@@ -229,31 +229,31 @@ export default function AdminPage() {
       setProducts(updated);
       try {
         localStorage.setItem('gb_admin_products', JSON.stringify(updated));
-      } catch {}
+      } catch { }
       showToast('পণ্যটি সফলভাবে মুছে ফেলা হয়েছে!');
     }
   };
 
   // Handle Toggle Product Stock
   const handleToggleProductStock = (productId: string) => {
-    const updated = products.map((p) => 
+    const updated = products.map((p) =>
       p.id === productId ? { ...p, inStock: !p.inStock } : p
     );
     setProducts(updated);
     try {
       localStorage.setItem('gb_admin_products', JSON.stringify(updated));
-    } catch {}
+    } catch { }
   };
 
   // Handle Stock Count Change
   const handleUpdateStockCount = (productId: string, delta: number) => {
-    const updated = products.map((p) => 
+    const updated = products.map((p) =>
       p.id === productId ? { ...p, stockCount: Math.max(0, p.stockCount + delta) } : p
     );
     setProducts(updated);
     try {
       localStorage.setItem('gb_admin_products', JSON.stringify(updated));
-    } catch {}
+    } catch { }
   };
 
   // Handle Add Coupon
@@ -275,7 +275,7 @@ export default function AdminPage() {
     setCoupons(updated);
     try {
       localStorage.setItem('gb_admin_coupons', JSON.stringify(updated));
-    } catch {}
+    } catch { }
 
     setIsAddCouponOpen(false);
     setNewCpnCode('');
@@ -307,7 +307,7 @@ export default function AdminPage() {
   // Filtered Orders
   const filteredOrders = useMemo(() => {
     return orders.filter((order) => {
-      const matchesSearch = 
+      const matchesSearch =
         order.orderId.toLowerCase().includes(orderSearchQuery.toLowerCase()) ||
         order.customerName.toLowerCase().includes(orderSearchQuery.toLowerCase()) ||
         order.phone.includes(orderSearchQuery);
@@ -319,7 +319,7 @@ export default function AdminPage() {
   // Filtered Products
   const filteredProducts = useMemo(() => {
     return products.filter((p) => {
-      const matchesSearch = 
+      const matchesSearch =
         p.nameBn.toLowerCase().includes(productSearchQuery.toLowerCase()) ||
         p.nameEn.toLowerCase().includes(productSearchQuery.toLowerCase());
       const matchesCat = productCategoryFilter === 'all' || p.category === productCategoryFilter;
@@ -330,7 +330,7 @@ export default function AdminPage() {
   // Login handler
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (loginEmail === 'admin@grambangla.com' && loginPassword === 'admin123') {
+    if (loginEmail === 'admin@গ্রামবাংলা.com' && loginPassword === 'admin123') {
       setIsAuthenticated(true);
       setAuthError('');
       showToast('অ্যাডমিন ড্যাশবোর্ডে স্বাগতম!');
@@ -392,7 +392,7 @@ export default function AdminPage() {
 
           <div className="pt-2 border-t border-gray-100 text-center">
             <div className="text-[11px] text-gray-400">
-              ডেমো এক্সেস: <code className="bg-gray-100 px-1.5 py-0.5 rounded text-gray-700 font-mono">admin@grambangla.com</code> / <code className="bg-gray-100 px-1.5 py-0.5 rounded text-gray-700 font-mono">admin123</code>
+              ডেমো এক্সেস: <code className="bg-gray-100 px-1.5 py-0.5 rounded text-gray-700 font-mono">admin@গ্রামবাংলা.com</code> / <code className="bg-gray-100 px-1.5 py-0.5 rounded text-gray-700 font-mono">admin123</code>
             </div>
           </div>
         </div>
@@ -402,7 +402,7 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen bg-[#F4F5F2] flex text-[#252B25] antialiased">
-      
+
       {/* Toast Notification */}
       {toastMessage && (
         <div className="fixed bottom-6 right-6 z-50 bg-[#244C32] text-white px-5 py-3 rounded-xl shadow-2xl text-xs sm:text-sm font-bold flex items-center gap-2 border border-[#E5B83F]/30 animate-fadeIn">
@@ -413,17 +413,16 @@ export default function AdminPage() {
 
       {/* Sidebar Overlay for Mobile */}
       {isSidebarOpen && (
-        <div 
+        <div
           onClick={() => setIsSidebarOpen(false)}
           className="fixed inset-0 bg-black/50 z-40 lg:hidden"
         />
       )}
 
       {/* Left Sidebar */}
-      <aside className={`fixed lg:static inset-y-0 left-0 z-40 w-64 bg-[#1E432B] text-white flex flex-col justify-between transition-transform duration-300 ease-in-out ${
-        isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
-      }`}>
-        
+      <aside className={`fixed lg:static inset-y-0 left-0 z-40 w-64 bg-[#1E432B] text-white flex flex-col justify-between transition-transform duration-300 ease-in-out ${isSidebarOpen ? 'translate-x-0' : '-translate-x-full lg:translate-x-0'
+        }`}>
+
         <div>
           {/* Brand Header */}
           <div className="p-5 border-b border-white/10 flex items-center justify-between">
@@ -437,7 +436,7 @@ export default function AdminPage() {
               </div>
             </Link>
 
-            <button 
+            <button
               onClick={() => setIsSidebarOpen(false)}
               className="lg:hidden p-1.5 rounded-lg hover:bg-white/10 text-white/80"
             >
@@ -449,11 +448,10 @@ export default function AdminPage() {
           <nav className="p-3 space-y-1.5">
             <button
               onClick={() => { setActiveTab('overview'); setIsSidebarOpen(false); }}
-              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                activeTab === 'overview'
-                  ? 'bg-white/15 text-white shadow-xs'
-                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
-              }`}
+              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${activeTab === 'overview'
+                ? 'bg-white/15 text-white shadow-xs'
+                : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                }`}
             >
               <div className="flex items-center gap-2.5">
                 <LayoutDashboard className="w-4 h-4 text-[#E5B83F]" />
@@ -463,11 +461,10 @@ export default function AdminPage() {
 
             <button
               onClick={() => { setActiveTab('orders'); setIsSidebarOpen(false); }}
-              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                activeTab === 'orders'
-                  ? 'bg-white/15 text-white shadow-xs'
-                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
-              }`}
+              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${activeTab === 'orders'
+                ? 'bg-white/15 text-white shadow-xs'
+                : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                }`}
             >
               <div className="flex items-center gap-2.5">
                 <ShoppingBag className="w-4 h-4 text-[#E5B83F]" />
@@ -482,11 +479,10 @@ export default function AdminPage() {
 
             <button
               onClick={() => { setActiveTab('products'); setIsSidebarOpen(false); }}
-              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                activeTab === 'products'
-                  ? 'bg-white/15 text-white shadow-xs'
-                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
-              }`}
+              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${activeTab === 'products'
+                ? 'bg-white/15 text-white shadow-xs'
+                : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                }`}
             >
               <div className="flex items-center gap-2.5">
                 <Package className="w-4 h-4 text-[#E5B83F]" />
@@ -497,11 +493,10 @@ export default function AdminPage() {
 
             <button
               onClick={() => { setActiveTab('customers'); setIsSidebarOpen(false); }}
-              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                activeTab === 'customers'
-                  ? 'bg-white/15 text-white shadow-xs'
-                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
-              }`}
+              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${activeTab === 'customers'
+                ? 'bg-white/15 text-white shadow-xs'
+                : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                }`}
             >
               <div className="flex items-center gap-2.5">
                 <Users className="w-4 h-4 text-[#E5B83F]" />
@@ -512,11 +507,10 @@ export default function AdminPage() {
 
             <button
               onClick={() => { setActiveTab('coupons'); setIsSidebarOpen(false); }}
-              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                activeTab === 'coupons'
-                  ? 'bg-white/15 text-white shadow-xs'
-                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
-              }`}
+              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${activeTab === 'coupons'
+                ? 'bg-white/15 text-white shadow-xs'
+                : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                }`}
             >
               <div className="flex items-center gap-2.5">
                 <Tag className="w-4 h-4 text-[#E5B83F]" />
@@ -527,11 +521,10 @@ export default function AdminPage() {
 
             <button
               onClick={() => { setActiveTab('settings'); setIsSidebarOpen(false); }}
-              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${
-                activeTab === 'settings'
-                  ? 'bg-white/15 text-white shadow-xs'
-                  : 'text-gray-300 hover:bg-white/10 hover:text-white'
-              }`}
+              className={`w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all cursor-pointer ${activeTab === 'settings'
+                ? 'bg-white/15 text-white shadow-xs'
+                : 'text-gray-300 hover:bg-white/10 hover:text-white'
+                }`}
             >
               <div className="flex items-center gap-2.5">
                 <Settings className="w-4 h-4 text-[#E5B83F]" />
@@ -577,10 +570,10 @@ export default function AdminPage() {
 
       {/* Main Content Area */}
       <main className="flex-1 flex flex-col min-w-0 overflow-y-auto">
-        
+
         {/* Top Header Bar */}
         <header className="sticky top-0 z-30 bg-white border-b border-gray-200/80 px-4 sm:px-6 py-3.5 flex items-center justify-between shadow-2xs">
-          
+
           <div className="flex items-center gap-3">
             <button
               onClick={() => setIsSidebarOpen(true)}
@@ -649,10 +642,10 @@ export default function AdminPage() {
           {/* TAB 1: OVERVIEW */}
           {activeTab === 'overview' && (
             <div className="space-y-6 animate-fadeIn">
-              
+
               {/* 4 KPI Cards */}
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                
+
                 {/* Total Revenue */}
                 <div className="bg-white p-5 rounded-2xl border border-gray-200/80 shadow-xs space-y-2">
                   <div className="flex items-center justify-between text-gray-500">
@@ -715,7 +708,7 @@ export default function AdminPage() {
 
               {/* Two Column Layout: Recent Orders + Quick Insights */}
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
-                
+
                 {/* Recent Orders (8 cols) */}
                 <div className="lg:col-span-8 bg-white rounded-2xl border border-gray-200/80 shadow-xs overflow-hidden">
                   <div className="p-5 border-b border-gray-100 flex items-center justify-between">
@@ -765,13 +758,12 @@ export default function AdminPage() {
                               ৳{order.total}
                             </td>
                             <td className="py-3 px-4">
-                              <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${
-                                order.status === 'Pending' ? 'bg-amber-50 text-amber-800 border-amber-200' :
+                              <span className={`px-2 py-0.5 rounded-full text-[10px] font-bold border ${order.status === 'Pending' ? 'bg-amber-50 text-amber-800 border-amber-200' :
                                 order.status === 'Confirmed' ? 'bg-blue-50 text-blue-800 border-blue-200' :
-                                order.status === 'Processing' ? 'bg-purple-50 text-purple-800 border-purple-200' :
-                                order.status === 'Delivered' ? 'bg-emerald-50 text-emerald-800 border-emerald-200' :
-                                'bg-rose-50 text-rose-800 border-rose-200'
-                              }`}>
+                                  order.status === 'Processing' ? 'bg-purple-50 text-purple-800 border-purple-200' :
+                                    order.status === 'Delivered' ? 'bg-emerald-50 text-emerald-800 border-emerald-200' :
+                                      'bg-rose-50 text-rose-800 border-rose-200'
+                                }`}>
                                 {order.status === 'Pending' && 'নতুন (Pending)'}
                                 {order.status === 'Confirmed' && 'কনফার্মড'}
                                 {order.status === 'Processing' && 'প্রসেসিং'}
@@ -797,7 +789,7 @@ export default function AdminPage() {
 
                 {/* Right Side: Popular Categories & Low Stock Warnings (4 cols) */}
                 <div className="lg:col-span-4 space-y-6">
-                  
+
                   {/* Category Revenue Shares */}
                   <div className="bg-white p-5 rounded-2xl border border-gray-200/80 shadow-xs space-y-4">
                     <h3 className="text-sm font-black text-[#244C32]">জনপ্রিয় ক্যাটাগরি বিক্রি</h3>
@@ -886,10 +878,10 @@ export default function AdminPage() {
           {/* TAB 2: ORDERS MANAGEMENT */}
           {activeTab === 'orders' && (
             <div className="space-y-4 animate-fadeIn">
-              
+
               {/* Filter & Search Bar */}
               <div className="bg-white p-4 rounded-2xl border border-gray-200/80 shadow-xs flex flex-col sm:flex-row gap-3 items-center justify-between">
-                
+
                 {/* Search */}
                 <div className="relative w-full sm:w-80">
                   <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
@@ -908,11 +900,10 @@ export default function AdminPage() {
                     <button
                       key={st}
                       onClick={() => setOrderStatusFilter(st)}
-                      className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors cursor-pointer ${
-                        orderStatusFilter === st
-                          ? 'bg-[#244C32] text-white'
-                          : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                      }`}
+                      className={`px-3 py-1.5 rounded-lg text-xs font-bold transition-colors cursor-pointer ${orderStatusFilter === st
+                        ? 'bg-[#244C32] text-white'
+                        : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                        }`}
                     >
                       {st === 'all' && `সব (${orders.length})`}
                       {st === 'Pending' && `পেন্ডিং (${orders.filter(o => o.status === 'Pending').length})`}
@@ -975,11 +966,10 @@ export default function AdminPage() {
                               </div>
                             </td>
                             <td className="py-3.5 px-4">
-                              <span className={`px-2 py-0.5 rounded font-bold text-[10px] ${
-                                order.paymentMethod === 'bkash' ? 'bg-[#E2136E]/10 text-[#E2136E]' :
+                              <span className={`px-2 py-0.5 rounded font-bold text-[10px] ${order.paymentMethod === 'bkash' ? 'bg-[#E2136E]/10 text-[#E2136E]' :
                                 order.paymentMethod === 'nagad' ? 'bg-[#F7941D]/10 text-[#F7941D]' :
-                                'bg-gray-100 text-gray-800'
-                              }`}>
+                                  'bg-gray-100 text-gray-800'
+                                }`}>
                                 {order.paymentMethod === 'cod' && 'ক্যাশ অন ডেলিভারি'}
                                 {order.paymentMethod === 'bkash' && 'বিকাশ'}
                                 {order.paymentMethod === 'nagad' && 'নগদ'}
@@ -992,13 +982,12 @@ export default function AdminPage() {
                               <select
                                 value={order.status}
                                 onChange={(e) => handleStatusChange(order.orderId, e.target.value as any)}
-                                className={`text-[11px] font-bold px-2 py-1 rounded-lg border focus:outline-none cursor-pointer ${
-                                  order.status === 'Pending' ? 'bg-amber-50 text-amber-800 border-amber-300' :
+                                className={`text-[11px] font-bold px-2 py-1 rounded-lg border focus:outline-none cursor-pointer ${order.status === 'Pending' ? 'bg-amber-50 text-amber-800 border-amber-300' :
                                   order.status === 'Confirmed' ? 'bg-blue-50 text-blue-800 border-blue-300' :
-                                  order.status === 'Processing' ? 'bg-purple-50 text-purple-800 border-purple-300' :
-                                  order.status === 'Delivered' ? 'bg-emerald-50 text-emerald-800 border-emerald-300' :
-                                  'bg-rose-50 text-rose-800 border-rose-300'
-                                }`}
+                                    order.status === 'Processing' ? 'bg-purple-50 text-purple-800 border-purple-300' :
+                                      order.status === 'Delivered' ? 'bg-emerald-50 text-emerald-800 border-emerald-300' :
+                                        'bg-rose-50 text-rose-800 border-rose-300'
+                                  }`}
                               >
                                 <option value="Pending">নতুন (Pending)</option>
                                 <option value="Confirmed">কনফার্মড</option>
@@ -1047,10 +1036,10 @@ export default function AdminPage() {
           {/* TAB 3: PRODUCTS MANAGEMENT */}
           {activeTab === 'products' && (
             <div className="space-y-4 animate-fadeIn">
-              
+
               {/* Search & Category Filter */}
               <div className="bg-white p-4 rounded-2xl border border-gray-200/80 shadow-xs flex flex-col sm:flex-row gap-3 items-center justify-between">
-                
+
                 <div className="relative w-full sm:w-80">
                   <Search className="w-4 h-4 absolute left-3 top-1/2 -translate-y-1/2 text-gray-400" />
                   <input
@@ -1147,11 +1136,10 @@ export default function AdminPage() {
                           <td className="py-3.5 px-4">
                             <button
                               onClick={() => handleToggleProductStock(p.id)}
-                              className={`px-2.5 py-1 rounded-full text-[10px] font-bold border transition-colors cursor-pointer ${
-                                p.inStock
-                                  ? 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100'
-                                  : 'bg-rose-50 text-rose-800 border-rose-200 hover:bg-rose-100'
-                              }`}
+                              className={`px-2.5 py-1 rounded-full text-[10px] font-bold border transition-colors cursor-pointer ${p.inStock
+                                ? 'bg-emerald-50 text-emerald-800 border-emerald-200 hover:bg-emerald-100'
+                                : 'bg-rose-50 text-rose-800 border-rose-200 hover:bg-rose-100'
+                                }`}
                             >
                               {p.inStock ? '✓ স্টকে আছে' : '✕ স্টক আউট'}
                             </button>
@@ -1325,7 +1313,7 @@ export default function AdminPage() {
           {activeTab === 'settings' && (
             <div className="max-w-3xl space-y-6 animate-fadeIn">
               <form onSubmit={handleSaveSettings} className="bg-white p-6 sm:p-8 rounded-2xl border border-gray-200/80 shadow-xs space-y-6">
-                
+
                 <div>
                   <h3 className="text-base font-black text-[#244C32]">স্টোর ও যোগাযোগ সেটিংস</h3>
                   <p className="text-xs text-gray-500 mt-0.5">এখানে পরিবর্তন করলে সাইটের হটলাইন, হোয়াটসঅ্যাপ ও ডেলিভারি ফি সাথে সাথে আপডেট হবে।</p>
@@ -1444,7 +1432,7 @@ export default function AdminPage() {
       {selectedOrderForInvoice && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto animate-fadeIn">
           <div className="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-gray-200 relative my-6 max-h-[92vh] overflow-y-auto">
-            
+
             <button
               onClick={() => setSelectedOrderForInvoice(null)}
               className="absolute top-5 right-5 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center"
@@ -1470,9 +1458,8 @@ export default function AdminPage() {
                 <span className="font-mono font-black text-base text-[#244C32]">{selectedOrderForInvoice.orderId}</span>
                 <div className="text-xs text-gray-500">তারিখ: {selectedOrderForInvoice.orderDate}</div>
                 <div className="mt-1">
-                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${
-                    selectedOrderForInvoice.status === 'Delivered' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
-                  }`}>
+                  <span className={`px-2 py-0.5 rounded text-[10px] font-bold ${selectedOrderForInvoice.status === 'Delivered' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'
+                    }`}>
                     স্ট্যাটাস: {selectedOrderForInvoice.status}
                   </span>
                 </div>
@@ -1565,7 +1552,7 @@ export default function AdminPage() {
       {isAddProductOpen && (
         <div className="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 overflow-y-auto animate-fadeIn">
           <div className="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-gray-200 relative my-6">
-            
+
             <button
               onClick={() => setIsAddProductOpen(false)}
               className="absolute top-5 right-5 w-8 h-8 rounded-full bg-gray-100 hover:bg-gray-200 text-gray-600 flex items-center justify-center"
@@ -1769,3 +1756,4 @@ export default function AdminPage() {
     </div>
   );
 }
+

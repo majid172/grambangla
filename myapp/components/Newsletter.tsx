@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import { Mail, CheckCircle2, Send, Sparkles } from 'lucide-react';
@@ -34,13 +34,13 @@ export default function Newsletter() {
         </h2>
 
         <p className="mt-3 text-sm sm:text-base text-gray-200 max-w-xl mx-auto">
-          শিকড়র নতুন পণ্যের আগমন, বিশেষ ডিসকাউন্ট কুপন ও স্বাস্থ্যকর খাদ্য বিষয়ক টিপস সবার আগে পেতে আপনার ইমেইল দিয়ে সাবস্ক্রাইব করুন।
+          গ্রামবাংলার নতুন পণ্যের আগমন, বিশেষ ডিসকাউন্ট কুপন ও স্বাস্থ্যকর খাদ্য বিষয়ক টিপস সবার আগে পেতে আপনার ইমেইল দিয়ে সাবস্ক্রাইব করুন।
         </p>
 
         {subscribed ? (
           <div className="mt-8 max-w-md mx-auto bg-white/15 border border-[#E5B83F]/50 rounded-2xl p-4 flex items-center justify-center gap-3 text-sm text-[#E5B83F] font-bold animate-fadeIn">
             <CheckCircle2 className="w-6 h-6 shrink-0" />
-            <span>ধন্যবাদ! আপনি সফলভাবে শিকড়র নিউজলেটারে যুক্ত হয়েছেন।</span>
+            <span>ধন্যবাদ! আপনি সফলভাবে গ্রামবাংলার নিউজলেটারে যুক্ত হয়েছেন।</span>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="mt-8 max-w-md mx-auto flex flex-col sm:flex-row items-center gap-2">
@@ -73,3 +73,4 @@ export default function Newsletter() {
     </section>
   );
 }
+

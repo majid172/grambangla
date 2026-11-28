@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Product, CartItem, OrderDetails } from '@/types';
@@ -158,7 +158,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
 
   const applyCoupon = (code: string) => {
     const cleaned = code.trim().toUpperCase();
-    if (cleaned === 'Shikor10' || cleaned === 'GB10') {
+    if (cleaned === 'GRAMBANGLA10' || cleaned === 'GB10') {
       setAppliedCoupon({ code: cleaned, discountPercent: 10 });
       showToast('১০% ডিসকাউন্ট কুপন সফলভাবে যুক্ত হয়েছে! 🎉');
       return true;
@@ -237,3 +237,4 @@ export function useCart() {
   }
   return context;
 }
+

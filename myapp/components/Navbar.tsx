@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
@@ -59,7 +59,7 @@ export default function Navbar() {
             <span className="inline-flex items-center gap-1 bg-[#E5B83F] text-[#244C32] px-2 py-0.5 rounded-full text-[11px] font-bold">
               <Sparkles className="w-3 h-3" /> অফার
             </span>
-            <span>কুপন <strong className="text-[#E5B83F] tracking-wide">Shikor10</strong> দিয়ে পান যেকোনো অর্ডারে ১০% ছাড়!</span>
+            <span>কুপন <strong className="text-[#E5B83F] tracking-wide">GRAMBANGLA10</strong> দিয়ে পান যেকোনো অর্ডারে ১০% ছাড়!</span>
           </div>
 
           <div className="hidden md:flex items-center gap-5 text-gray-200">
@@ -229,3 +229,4 @@ export default function Navbar() {
     </header>
   );
 }
+

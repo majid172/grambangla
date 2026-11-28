@@ -1,0 +1,675 @@
+﻿{
+  "products": [
+    {
+      "id": "gb-1",
+      "slug": "cold-pressed-mustard-oil-1l",
+      "nameBn": "কাঠের ঘানিভাঙা সরিষার তেল – ১ লিটার",
+      "nameEn": "Traditional Cold Pressed Mustard Oil – 1L",
+      "category": "mustard-oil",
+      "categoryNameBn": "সরিষার তেল",
+      "shortDescBn": "সিরাজগঞ্জের মাঠ থেকে বাছাই করা মাঘী সরিষা। কাঠের ঘানিতে ধীর গতিতে কোল্ড-প্রেসড করায় প্রাকৃতিক ঝাঁঝ ও পুষ্টি অক্ষুণ্ণ।",
+      "fullDescBn": "আমাদের এই তেল স্থানীয় কৃষকদের সংগৃহীত সেরা জাতের মাঘী সরিষা থেকে প্রস্তুত করা হয়। আধুনিক স্টিল মেশিনে অতিরিক্ত তাপমাত্রায় তেলের পুষ্টি নষ্ট হয়, তাই আমরা ব্যবহার করি সনাতন কাঠের ঘানি। কোনো প্রকার ভেজাল, সয়াবিন মিশ্রণ বা কৃত্রিম সুগন্ধি ছাড়াই বোতলজাত করা হয়। খাঁটি সরিষার আসল ঝাঁঝ ও স্বাদে আপনার পরিবারের রান্না হবে সুস্বাদু ও নিরাপদ।",
+      "price": 360,
+      "originalPrice": 420,
+      "discountPercent": 14,
+      "unit": "১ লিটার কাঁচের বোতল",
+      "inStock": true,
+      "stockCount": 45,
+      "rating": 4.9,
+      "reviewCount": 184,
+      "featured": true,
+      "isBestseller": true,
+      "organicCertified": true,
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+        "https://cdn2.stylecraze.com/wp-content/uploads/2013/08/65-iStock-500478982.jpg.avif"
+      ],
+      "badge": "সেরা বিক্রয়",
+      "sourceLocation": "তাড়াশ, সিরাজগঞ্জ",
+      "nutritionalHighlights": [
+        "সনাতন কাঠের ঘানিতে কোল্ড-প্রেসড",
+        "প্রাকৃতিক ঝাঁঝ ও আসল সুবাস",
+        "ওমেগা-৩ ও ওমেগা-৬ ফ্যাটি অ্যাসিড সমৃদ্ধ",
+        "কোনো কেমিক্যাল বা প্রিজারভেটিভ নেই"
+      ]
+    },
+    {
+      "id": "gb-2",
+      "slug": "pure-desi-ghee-500g",
+      "nameBn": "পাবনার খাঁটি দানাদার গাওয়া ঘি – ৫০০ গ্রাম",
+      "nameEn": "Pabna Traditional Desi Ghee – 500g",
+      "category": "ghee",
+      "categoryNameBn": "গাওয়া ও বিলোড়ন ঘি",
+      "shortDescBn": "মুক্ত চারণভূমির দেশি গাভীর দুধের মাখন থেকে তৈরি। ঐতিহ্যবাহী মাটির হাঁড়িতে জ্বাল দেওয়া স্বর্গীয় সোনালী সুবাস।",
+      "fullDescBn": "পাবনা অঞ্চলের প্রাকৃতিক ঘাস খাওয়া দেশি গাভীর তাজা দুধ থেকে সনাতনী বিলোড়ন পদ্ধতিতে মাখন সংগ্রহ করা হয়। মাটির হাঁড়িতে ধীর আঁচে জ্বাল দিয়ে তৈরি হয় গ্রামবাংলা খাঁটি গাওয়া ঘি। অতুলনীয় দানাদার টেক্সচার, প্রাকৃতিক সোনালী আভা এবং স্বর্গীয় সুবাসে গরম ভাত, খিচুড়ি কিংবা হালুয়ার স্বাদ বেড়ে যায় বহুগুণ।",
+      "price": 950,
+      "originalPrice": 1100,
+      "discountPercent": 14,
+      "unit": "৫০০ গ্রাম ফুডগ্রেড কাঁচের জার",
+      "inStock": true,
+      "stockCount": 32,
+      "rating": 5,
+      "reviewCount": 142,
+      "featured": true,
+      "isBestseller": true,
+      "organicCertified": true,
+      "image": "https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg",
+      "gallery": [
+        "https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg"
+      ],
+      "badge": "প্রিমিয়াম কোয়ালিটি",
+      "sourceLocation": "সাঁথিয়া, পাবনা",
+      "nutritionalHighlights": [
+        "ঘাস খাওয়া দেশি গরুর দুধের মাখন",
+        "শতভাগ প্রাকৃতিক দানাদার টেক্সচার",
+        "ভিটামিন এ, ডি, ই এবং কে সমৃদ্ধ",
+        "হজমশক্তি ও রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি করে"
+      ]
+    },
+    {
+      "id": "gb-3",
+      "slug": "sundarbans-wild-honey-500g",
+      "nameBn": "সুন্দরবনের প্রাকৃতিক খলিশা ফুলের মধু – ৫০০ গ্রাম",
+      "nameEn": "Raw Sundarbans Khilisha Flower Honey – 500g",
+      "category": "honey",
+      "categoryNameBn": "প্রাকৃতিক মধু",
+      "shortDescBn": "সুন্দরবনের গহিন জঙ্গল থেকে মৌয়ালদের সংগৃহীত অপরিশোধিত কাঁচা মধু। কোনো চিনি বা কৃত্রিম প্রক্রিয়াজাতকরণ ছাড়া।",
+      "fullDescBn": "সুন্দরবনের গভীর ম্যানগ্রোভ অরণ্য থেকে মৌয়ালদের মাধ্যমে সরাসরি সংগৃহীত ১০০% বিশুদ্ধ ও কাঁচা মধু। কোনো তাপ প্রয়োগ বা প্রক্রিয়াজাতকরণ ছাড়াই ফিল্টার করে বোতলজাত করা হয়, যার ফলে মধুর প্রাকৃতিক এনজাইম, পরাগরেণু ও ঔষধি গুণাগুণ পুরোপুরি সংরক্ষিত থাকে। এর অনন্য প্রাকৃতিক সুবাস ও হালকা পাতলা ঘনত্বই আসল বুনো মধুর পরিচয়।",
+      "price": 750,
+      "originalPrice": 850,
+      "discountPercent": 12,
+      "unit": "৫০০ গ্রাম কাঁচের জার",
+      "inStock": true,
+      "stockCount": 28,
+      "rating": 4.8,
+      "reviewCount": 96,
+      "featured": true,
+      "isBestseller": true,
+      "organicCertified": true,
+      "image": "https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75",
+      "gallery": [
+        "https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75"
+      ],
+      "badge": "১০০% কাঁচা মধু",
+      "sourceLocation": "শ্যামনগর, সুন্দরবন অঞ্চল",
+      "nutritionalHighlights": [
+        "অশোধিত ও আনপাস্তুরিত কাঁচা মধু",
+        "প্রাকৃতিক অ্যান্টিঅক্সিডেন্ট ও অ্যান্টিব্যাকটেরিয়াল গুণ",
+        "পরাগরেণু ও জীবন্ত এনজাইম অক্ষুণ্ণ",
+        "কাশি ও ঠান্ডা নিরাময়ে অত্যন্ত কার্যকর"
+      ]
+    },
+    {
+      "id": "gb-4",
+      "slug": "jashore-patali-gur-1kg",
+      "nameBn": "যশোরের খাঁটি খেজুরের নলেন পাটালি গুড় – ১ কেজি",
+      "nameEn": "Authentic Jashore Date Palm Jaggery (Patali) – 1kg",
+      "category": "gur",
+      "categoryNameBn": "খেজুরের গুড়",
+      "shortDescBn": "যশোরের ঐতিহ্যবাহী গাছিদের হাতে মাটির চুলার ধীর আঁচে তৈরি বিশুদ্ধ খেজুরের পাটালি। কোনো চিনি বা রাসায়নিক হাইড্রোস নেই।",
+      "fullDescBn": "শীতের সকালে যশোরের ঐতিহ্যবাহী খেজুর গাছ থেকে সংগৃহীত তাজা মিষ্টি রস মাটির চুলায় কাঠের মৃদু তাপে ঘণ্টার পর ঘণ্টা জ্বাল দিয়ে তৈরি হয় আসল নলেন পাটালি গুড়। বাজারের কৃত্রিম কেমিক্যাল ও চিনি মেশানো শক্ত গুড়ের বিপরীতে আমাদের পাটালি নরম, দানাদার ও সুবাসিত। মুখে দিলেই মিলিয়ে যায় এবং খাঁটি খেজুরের রসের সুবাস পাওয়া যায়।",
+      "price": 390,
+      "originalPrice": 450,
+      "discountPercent": 13,
+      "unit": "১ কেজি সুরক্ষিত ক্লে/ইকো বক্স",
+      "inStock": true,
+      "stockCount": 50,
+      "rating": 5,
+      "reviewCount": 118,
+      "featured": true,
+      "isBestseller": false,
+      "organicCertified": true,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLtBXSxGFZMinsYa4GyfhGj2QssMc__87lV6plIEuv9zulQOdeDJ4qV8&s=10",
+      "gallery": [
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLtBXSxGFZMinsYa4GyfhGj2QssMc__87lV6plIEuv9zulQOdeDJ4qV8&s=10"
+      ],
+      "badge": "ঐতিহ্যবাহী স্বাদের গুড়",
+      "sourceLocation": "চৌগাছা, যশোর",
+      "nutritionalHighlights": [
+        "চিনি ও রাসায়নিক কেমিক্যাল মুক্ত",
+        "প্রাকৃতিক আয়রন ও খনিজ উপাদান সমৃদ্ধ",
+        "হজম প্রক্রিয়ায় সহায়ক",
+        "শীতের পিঠা ও পায়েসে স্বর্গীয় স্বাদ যোগ করে"
+      ]
+    },
+    {
+      "id": "gb-5",
+      "slug": "dinajpur-kalijira-rice-2kg",
+      "nameBn": "দিনাজপুরের সুগন্ধি কালোজিরা চাল – ২ কেজি",
+      "nameEn": "Dinajpur Aromatic Small Grain Rice – 2kg",
+      "category": "rice",
+      "categoryNameBn": "সুগন্ধি ও ঢেঁকিছাঁটা চাল",
+      "shortDescBn": "উত্তরবঙ্গের কৃষকদের দেশীয় বীজ থেকে উৎপাদিত সুগন্ধি ছোট দানার চাল। পোলাও, বিরিয়ানি ও পায়েসের জন্য সেরা।",
+      "fullDescBn": "দিনাজপুরের উর্বর পলি মাটিতে উৎপাদিত খাঁটি কালোজিরা সুগন্ধি চাল। চালের ছোট ছোট দানা রান্নার পর ঝরঝরে থাকে এবং পুরো ঘর প্রাকৃতিক সুগন্ধে ভরে তোলে। কোনো ক্ষতিকারক রাসায়নিক পলিশ বা সুগন্ধি যোগ করা ছাড়াই প্যাকেজিং করা হয়।",
+      "price": 340,
+      "originalPrice": 380,
+      "discountPercent": 11,
+      "unit": "২ কেজি ইকো কটন ব্যাগ",
+      "inStock": true,
+      "stockCount": 60,
+      "rating": 4.9,
+      "reviewCount": 89,
+      "featured": false,
+      "isBestseller": false,
+      "organicCertified": true,
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80",
+      "gallery": [
+        "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+      ],
+      "badge": "সুগন্ধি পোলাও চাল",
+      "sourceLocation": "বীরগঞ্জ, দিনাজপুর",
+      "nutritionalHighlights": [
+        "প্রাকৃতিক ভেষজ সুবাস ও ঝরঝরে দানা",
+        "ইউরিয়া বা ব্লিচিং পাউডার মুক্ত",
+        "সহজে হজমযোগ্য সুস্বাদু চাল",
+        "সরাসরি কৃষকের গোলা থেকে"
+      ]
+    }
+  ],
+  "categories": [
+    {
+      "id": "cat-1",
+      "slug": "mustard-oil",
+      "nameBn": "সরিষার তেল",
+      "nameEn": "Cold Pressed Mustard Oil",
+      "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+      "itemCount": 8,
+      "descriptionBn": "সিরাজগঞ্জের বাছাইকৃত মাঘী সরিষা থেকে কাঠের ঘানিতে ভাঙা খাঁটি ঝাঁঝালো তেল",
+      "tagline": "শতভাগ কাঠের ঘানিভাঙা"
+    },
+    {
+      "id": "cat-2",
+      "slug": "ghee",
+      "nameBn": "গাওয়া ও বিলোড়ন ঘি",
+      "nameEn": "Grass-fed Desi Ghee",
+      "image": "https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg",
+      "itemCount": 6,
+      "descriptionBn": "দেশি গাভীর খাঁটি দুধের মাখন থেকে তৈরি দানাদার সুবাসিত ঘি",
+      "tagline": "মাটির হাঁড়িতে মৃদু আঁচে তৈরি"
+    },
+    {
+      "id": "cat-3",
+      "slug": "honey",
+      "nameBn": "প্রাকৃতিক মধু",
+      "nameEn": "Sundarbans Wild Honey",
+      "image": "https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75",
+      "itemCount": 5,
+      "descriptionBn": "সুন্দরবনের গভীর অরণ্য ও খলিশা ফুলের অপরিশোধিত কাঁচা এনজাইম সমৃদ্ধ মধু",
+      "tagline": "১০০% কাঁচা ও আনপ্রসেসড"
+    },
+    {
+      "id": "cat-4",
+      "slug": "gur",
+      "nameBn": "খেজুরের গুড়",
+      "nameEn": "Authentic Date Jaggery",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLtBXSxGFZMinsYa4GyfhGj2QssMc__87lV6plIEuv9zulQOdeDJ4qV8&s=10",
+      "itemCount": 4,
+      "descriptionBn": "যশোরের ঐতিহ্যবাহী গাছিদের হাতে তৈরি খাঁটি নলেন গুড় ও সুস্বাদু পাটালি",
+      "tagline": "শীতের আসল প্রাকৃতিক মিষ্টি"
+    },
+    {
+      "id": "cat-5",
+      "slug": "rice",
+      "nameBn": "সুগন্ধি ও ঢেঁকিছাঁটা চাল",
+      "nameEn": "Aromatic & Heritage Rice",
+      "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80",
+      "itemCount": 7,
+      "descriptionBn": "দিনাজপুরের চিনিগুঁড়া, কাটারিভোগ ও লাল চালের পুষ্টিকর পুষ্টিগুণ",
+      "tagline": "কেমিক্যাল ও পলিশবিহীন"
+    },
+    {
+      "id": "cat-6",
+      "slug": "spices",
+      "nameBn": "পাহাড়ি খাঁটি মসলা",
+      "nameEn": "Pure Native Spices",
+      "image": "https://images.unsplash.com/photo-1596040033229-a9821ebd058d?auto=format&fit=crop&w=800&q=80",
+      "itemCount": 9,
+      "descriptionBn": "খাগড়াছড়ির জুমের হলুদ, খাঁটি মরিচ গুঁড়া ও ঘানিভাঙা কালোজিরা তেল",
+      "tagline": "লেড ও কৃত্রিম রঙ মুক্ত"
+    }
+  ],
+  "orders": [
+    {
+      "orderId": "GB-2026-9281",
+      "customerName": "মোঃ রাকিবুল হাসান",
+      "phone": "01711234567",
+      "email": "rakibul.h@gmail.com",
+      "address": "বাড়ি #১৫, রোড #৪, ধানমন্ডি",
+      "city": "ঢাকা মেট্রো",
+      "deliveryMethod": "regular",
+      "paymentMethod": "cod",
+      "items": [
+        {
+          "product": {
+            "id": "gb-1",
+            "slug": "cold-pressed-mustard-oil-1l",
+            "nameBn": "কাঠের ঘানিভাঙা সরিষার তেল – ১ লিটার",
+            "nameEn": "Traditional Cold Pressed Mustard Oil – 1L",
+            "category": "mustard-oil",
+            "categoryNameBn": "সরিষার তেল",
+            "shortDescBn": "সিরাজগঞ্জের মাঠ থেকে বাছাই করা মাঘী সরিষা। কাঠের ঘানিতে ধীর গতিতে কোল্ড-প্রেসড করায় প্রাকৃতিক ঝাঁঝ ও পুষ্টি অক্ষুণ্ণ।",
+            "fullDescBn": "আমাদের এই তেল স্থানীয় কৃষকদের সংগৃহীত সেরা জাতের মাঘী সরিষা থেকে প্রস্তুত করা হয়। আধুনিক স্টিল মেশিনে অতিরিক্ত তাপমাত্রায় তেলের পুষ্টি নষ্ট হয়, তাই আমরা ব্যবহার করি সনাতন কাঠের ঘানি। কোনো প্রকার ভেজাল, সয়াবিন মিশ্রণ বা কৃত্রিম সুগন্ধি ছাড়াই বোতলজাত করা হয়। খাঁটি সরিষার আসল ঝাঁঝ ও স্বাদে আপনার পরিবারের রান্না হবে সুস্বাদু ও নিরাপদ।",
+            "price": 360,
+            "originalPrice": 420,
+            "discountPercent": 14,
+            "unit": "১ লিটার কাঁচের বোতল",
+            "inStock": true,
+            "stockCount": 45,
+            "rating": 4.9,
+            "reviewCount": 184,
+            "featured": true,
+            "isBestseller": true,
+            "organicCertified": true,
+            "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+            "gallery": [
+              "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+              "https://cdn2.stylecraze.com/wp-content/uploads/2013/08/65-iStock-500478982.jpg.avif"
+            ],
+            "badge": "সেরা বিক্রয়",
+            "sourceLocation": "তাড়াশ, সিরাজগঞ্জ",
+            "nutritionalHighlights": [
+              "সনাতন কাঠের ঘানিতে কোল্ড-প্রেসড",
+              "প্রাকৃতিক ঝাঁঝ ও আসল সুবাস",
+              "ওমেগা-৩ ও ওমেগা-৬ ফ্যাটি অ্যাসিড সমৃদ্ধ",
+              "কোনো কেমিক্যাল বা প্রিজারভেটিভ নেই"
+            ]
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": "gb-2",
+            "slug": "pure-desi-ghee-500g",
+            "nameBn": "পাবনার খাঁটি দানাদার গাওয়া ঘি – ৫০০ গ্রাম",
+            "nameEn": "Pabna Traditional Desi Ghee – 500g",
+            "category": "ghee",
+            "categoryNameBn": "গাওয়া ও বিলোড়ন ঘি",
+            "shortDescBn": "মুক্ত চারণভূমির দেশি গাভীর দুধের মাখন থেকে তৈরি। ঐতিহ্যবাহী মাটির হাঁড়িতে জ্বাল দেওয়া স্বর্গীয় সোনালী সুবাস।",
+            "fullDescBn": "পাবনা অঞ্চলের প্রাকৃতিক ঘাস খাওয়া দেশি গাভীর তাজা দুধ থেকে সনাতনী বিলোড়ন পদ্ধতিতে মাখন সংগ্রহ করা হয়। মাটির হাঁড়িতে ধীর আঁচে জ্বাল দিয়ে তৈরি হয় গ্রামবাংলা খাঁটি গাওয়া ঘি। অতুলনীয় দানাদার টেক্সচার, প্রাকৃতিক সোনালী আভা এবং স্বর্গীয় সুবাসে গরম ভাত, খিচুড়ি কিংবা হালুয়ার স্বাদ বেড়ে যায় বহুগুণ।",
+            "price": 950,
+            "originalPrice": 1100,
+            "discountPercent": 14,
+            "unit": "৫০০ গ্রাম ফুডগ্রেড কাঁচের জার",
+            "inStock": true,
+            "stockCount": 32,
+            "rating": 5,
+            "reviewCount": 142,
+            "featured": true,
+            "isBestseller": true,
+            "organicCertified": true,
+            "image": "https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg",
+            "gallery": [
+              "https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg"
+            ],
+            "badge": "প্রিমিয়াম কোয়ালিটি",
+            "sourceLocation": "সাঁথিয়া, পাবনা",
+            "nutritionalHighlights": [
+              "ঘাস খাওয়া দেশি গরুর দুধের মাখন",
+              "শতভাগ প্রাকৃতিক দানাদার টেক্সচার",
+              "ভিটামিন এ, ডি, ই এবং কে সমৃদ্ধ",
+              "হজমশক্তি ও রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি করে"
+            ]
+          },
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1670,
+      "deliveryFee": 70,
+      "discount": 100,
+      "total": 1640,
+      "status": "Pending",
+      "orderDate": "২৬ নভেম্বর, ২০২৬"
+    },
+    {
+      "orderId": "GB-2026-9140",
+      "customerName": "ফাহমিদা আক্তার",
+      "phone": "01819876543",
+      "email": "fahmida.akt@yahoo.com",
+      "address": "ব্লক-সি, রোড #১১, বনানী",
+      "city": "ঢাকা মেট্রো",
+      "deliveryMethod": "regular",
+      "paymentMethod": "bkash",
+      "items": [
+        {
+          "product": {
+            "id": "gb-3",
+            "slug": "sundarbans-wild-honey-500g",
+            "nameBn": "সুন্দরবনের প্রাকৃতিক খলিশা ফুলের মধু – ৫০০ গ্রাম",
+            "nameEn": "Raw Sundarbans Khilisha Flower Honey – 500g",
+            "category": "honey",
+            "categoryNameBn": "প্রাকৃতিক মধু",
+            "shortDescBn": "সুন্দরবনের গহিন জঙ্গল থেকে মৌয়ালদের সংগৃহীত অপরিশোধিত কাঁচা মধু। কোনো চিনি বা কৃত্রিম প্রক্রিয়াজাতকরণ ছাড়া।",
+            "fullDescBn": "সুন্দরবনের গভীর ম্যানগ্রোভ অরণ্য থেকে মৌয়ালদের মাধ্যমে সরাসরি সংগৃহীত ১০০% বিশুদ্ধ ও কাঁচা মধু। কোনো তাপ প্রয়োগ বা প্রক্রিয়াজাতকরণ ছাড়াই ফিল্টার করে বোতলজাত করা হয়, যার ফলে মধুর প্রাকৃতিক এনজাইম, পরাগরেণু ও ঔষধি গুণাগুণ পুরোপুরি সংরক্ষিত থাকে। এর অনন্য প্রাকৃতিক সুবাস ও হালকা পাতলা ঘনত্বই আসল বুনো মধুর পরিচয়।",
+            "price": 750,
+            "originalPrice": 850,
+            "discountPercent": 12,
+            "unit": "৫০০ গ্রাম কাঁচের জার",
+            "inStock": true,
+            "stockCount": 28,
+            "rating": 4.8,
+            "reviewCount": 96,
+            "featured": true,
+            "isBestseller": true,
+            "organicCertified": true,
+            "image": "https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75",
+            "gallery": [
+              "https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75"
+            ],
+            "badge": "১০০% কাঁচা মধু",
+            "sourceLocation": "শ্যামনগর, সুন্দরবন অঞ্চল",
+            "nutritionalHighlights": [
+              "অশোধিত ও আনপাস্তুরিত কাঁচা মধু",
+              "প্রাকৃতিক অ্যান্টিঅক্সিডেন্ট ও অ্যান্টিব্যাকটেরিয়াল গুণ",
+              "পরাগরেণু ও জীবন্ত এনজাইম অক্ষুণ্ণ",
+              "কাশি ও ঠান্ডা নিরাময়ে অত্যন্ত কার্যকর"
+            ]
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "gb-4",
+            "slug": "jashore-patali-gur-1kg",
+            "nameBn": "যশোরের খাঁটি খেজুরের নলেন পাটালি গুড় – ১ কেজি",
+            "nameEn": "Authentic Jashore Date Palm Jaggery (Patali) – 1kg",
+            "category": "gur",
+            "categoryNameBn": "খেজুরের গুড়",
+            "shortDescBn": "যশোরের ঐতিহ্যবাহী গাছিদের হাতে মাটির চুলার ধীর আঁচে তৈরি বিশুদ্ধ খেজুরের পাটালি। কোনো চিনি বা রাসায়নিক হাইড্রোস নেই।",
+            "fullDescBn": "শীতের সকালে যশোরের ঐতিহ্যবাহী খেজুর গাছ থেকে সংগৃহীত তাজা মিষ্টি রস মাটির চুলায় কাঠের মৃদু তাপে ঘণ্টার পর ঘণ্টা জ্বাল দিয়ে তৈরি হয় আসল নলেন পাটালি গুড়। বাজারের কৃত্রিম কেমিক্যাল ও চিনি মেশানো শক্ত গুড়ের বিপরীতে আমাদের পাটালি নরম, দানাদার ও সুবাসিত। মুখে দিলেই মিলিয়ে যায় এবং খাঁটি খেজুরের রসের সুবাস পাওয়া যায়।",
+            "price": 390,
+            "originalPrice": 450,
+            "discountPercent": 13,
+            "unit": "১ কেজি সুরক্ষিত ক্লে/ইকো বক্স",
+            "inStock": true,
+            "stockCount": 50,
+            "rating": 5,
+            "reviewCount": 118,
+            "featured": true,
+            "isBestseller": false,
+            "organicCertified": true,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLtBXSxGFZMinsYa4GyfhGj2QssMc__87lV6plIEuv9zulQOdeDJ4qV8&s=10",
+            "gallery": [
+              "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRLtBXSxGFZMinsYa4GyfhGj2QssMc__87lV6plIEuv9zulQOdeDJ4qV8&s=10"
+            ],
+            "badge": "ঐতিহ্যবাহী স্বাদের গুড়",
+            "sourceLocation": "চৌগাছা, যশোর",
+            "nutritionalHighlights": [
+              "চিনি ও রাসায়নিক কেমিক্যাল মুক্ত",
+              "প্রাকৃতিক আয়রন ও খনিজ উপাদান সমৃদ্ধ",
+              "হজম প্রক্রিয়ায় সহায়ক",
+              "শীতের পিঠা ও পায়েসে স্বর্গীয় স্বাদ যোগ করে"
+            ]
+          },
+          "quantity": 2
+        }
+      ],
+      "subtotal": 1530,
+      "deliveryFee": 70,
+      "discount": 0,
+      "total": 1600,
+      "status": "Confirmed",
+      "orderDate": "২৬ নভেম্বর, ২০২৬"
+    },
+    {
+      "orderId": "GB-2026-8924",
+      "customerName": "তানভীর আহমেদ চৌধুরী",
+      "phone": "01912349876",
+      "email": "tanvir.ctg@gmail.com",
+      "address": "জিইসি মোড়, নাসিরাবাদ হাউজিং সোসাইটি",
+      "city": "ঢাকার বাইরে",
+      "deliveryMethod": "regular",
+      "paymentMethod": "cod",
+      "items": [
+        {
+          "product": {
+            "id": "gb-1",
+            "slug": "cold-pressed-mustard-oil-1l",
+            "nameBn": "কাঠের ঘানিভাঙা সরিষার তেল – ১ লিটার",
+            "nameEn": "Traditional Cold Pressed Mustard Oil – 1L",
+            "category": "mustard-oil",
+            "categoryNameBn": "সরিষার তেল",
+            "shortDescBn": "সিরাজগঞ্জের মাঠ থেকে বাছাই করা মাঘী সরিষা। কাঠের ঘানিতে ধীর গতিতে কোল্ড-প্রেসড করায় প্রাকৃতিক ঝাঁঝ ও পুষ্টি অক্ষুণ্ণ।",
+            "fullDescBn": "আমাদের এই তেল স্থানীয় কৃষকদের সংগৃহীত সেরা জাতের মাঘী সরিষা থেকে প্রস্তুত করা হয়। আধুনিক স্টিল মেশিনে অতিরিক্ত তাপমাত্রায় তেলের পুষ্টি নষ্ট হয়, তাই আমরা ব্যবহার করি সনাতন কাঠের ঘানি। কোনো প্রকার ভেজাল, সয়াবিন মিশ্রণ বা কৃত্রিম সুগন্ধি ছাড়াই বোতলজাত করা হয়। খাঁটি সরিষার আসল ঝাঁঝ ও স্বাদে আপনার পরিবারের রান্না হবে সুস্বাদু ও নিরাপদ।",
+            "price": 360,
+            "originalPrice": 420,
+            "discountPercent": 14,
+            "unit": "১ লিটার কাঁচের বোতল",
+            "inStock": true,
+            "stockCount": 45,
+            "rating": 4.9,
+            "reviewCount": 184,
+            "featured": true,
+            "isBestseller": true,
+            "organicCertified": true,
+            "image": "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+            "gallery": [
+              "https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=800&q=80",
+              "https://cdn2.stylecraze.com/wp-content/uploads/2013/08/65-iStock-500478982.jpg.avif"
+            ],
+            "badge": "সেরা বিক্রয়",
+            "sourceLocation": "তাড়াশ, সিরাজগঞ্জ",
+            "nutritionalHighlights": [
+              "সনাতন কাঠের ঘানিতে কোল্ড-প্রেসড",
+              "প্রাকৃতিক ঝাঁঝ ও আসল সুবাস",
+              "ওমেগা-৩ ও ওমেগা-৬ ফ্যাটি অ্যাসিড সমৃদ্ধ",
+              "কোনো কেমিক্যাল বা প্রিজারভেটিভ নেই"
+            ]
+          },
+          "quantity": 3
+        },
+        {
+          "product": {
+            "id": "gb-5",
+            "slug": "dinajpur-kalijira-rice-2kg",
+            "nameBn": "দিনাজপুরের সুগন্ধি কালোজিরা চাল – ২ কেজি",
+            "nameEn": "Dinajpur Aromatic Small Grain Rice – 2kg",
+            "category": "rice",
+            "categoryNameBn": "সুগন্ধি ও ঢেঁকিছাঁটা চাল",
+            "shortDescBn": "উত্তরবঙ্গের কৃষকদের দেশীয় বীজ থেকে উৎপাদিত সুগন্ধি ছোট দানার চাল। পোলাও, বিরিয়ানি ও পায়েসের জন্য সেরা।",
+            "fullDescBn": "দিনাজপুরের উর্বর পলি মাটিতে উৎপাদিত খাঁটি কালোজিরা সুগন্ধি চাল। চালের ছোট ছোট দানা রান্নার পর ঝরঝরে থাকে এবং পুরো ঘর প্রাকৃতিক সুগন্ধে ভরে তোলে। কোনো ক্ষতিকারক রাসায়নিক পলিশ বা সুগন্ধি যোগ করা ছাড়াই প্যাকেজিং করা হয়।",
+            "price": 340,
+            "originalPrice": 380,
+            "discountPercent": 11,
+            "unit": "২ কেজি ইকো কটন ব্যাগ",
+            "inStock": true,
+            "stockCount": 60,
+            "rating": 4.9,
+            "reviewCount": 89,
+            "featured": false,
+            "isBestseller": false,
+            "organicCertified": true,
+            "image": "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80",
+            "gallery": [
+              "https://images.unsplash.com/photo-1586201375761-83865001e31c?auto=format&fit=crop&w=800&q=80"
+            ],
+            "badge": "সুগন্ধি পোলাও চাল",
+            "sourceLocation": "বীরগঞ্জ, দিনাজপুর",
+            "nutritionalHighlights": [
+              "প্রাকৃতিক ভেষজ সুবাস ও ঝরঝরে দানা",
+              "ইউরিয়া বা ব্লিচিং পাউডার মুক্ত",
+              "সহজে হজমযোগ্য সুস্বাদু চাল",
+              "সরাসরি কৃষকের গোলা থেকে"
+            ]
+          },
+          "quantity": 1
+        }
+      ],
+      "subtotal": 1420,
+      "deliveryFee": 130,
+      "discount": 0,
+      "total": 1550,
+      "status": "Processing",
+      "orderDate": "২৫ নভেম্বর, ২০২৬"
+    },
+    {
+      "orderId": "GB-2026-8812",
+      "customerName": "প্রফেসর ড. মোজাম্মেল হক",
+      "phone": "01715554321",
+      "email": "mojammel.raj@edu.bd",
+      "address": "সেক্টর-৩, উপশহর, বোয়ালিয়া",
+      "city": "ঢাকার বাইরে",
+      "deliveryMethod": "regular",
+      "paymentMethod": "bkash",
+      "items": [
+        {
+          "product": {
+            "id": "gb-2",
+            "slug": "pure-desi-ghee-500g",
+            "nameBn": "পাবনার খাঁটি দানাদার গাওয়া ঘি – ৫০০ গ্রাম",
+            "nameEn": "Pabna Traditional Desi Ghee – 500g",
+            "category": "ghee",
+            "categoryNameBn": "গাওয়া ও বিলোড়ন ঘি",
+            "shortDescBn": "মুক্ত চারণভূমির দেশি গাভীর দুধের মাখন থেকে তৈরি। ঐতিহ্যবাহী মাটির হাঁড়িতে জ্বাল দেওয়া স্বর্গীয় সোনালী সুবাস।",
+            "fullDescBn": "পাবনা অঞ্চলের প্রাকৃতিক ঘাস খাওয়া দেশি গাভীর তাজা দুধ থেকে সনাতনী বিলোড়ন পদ্ধতিতে মাখন সংগ্রহ করা হয়। মাটির হাঁড়িতে ধীর আঁচে জ্বাল দিয়ে তৈরি হয় গ্রামবাংলা খাঁটি গাওয়া ঘি। অতুলনীয় দানাদার টেক্সচার, প্রাকৃতিক সোনালী আভা এবং স্বর্গীয় সুবাসে গরম ভাত, খিচুড়ি কিংবা হালুয়ার স্বাদ বেড়ে যায় বহুগুণ।",
+            "price": 950,
+            "originalPrice": 1100,
+            "discountPercent": 14,
+            "unit": "৫০০ গ্রাম ফুডগ্রেড কাঁচের জার",
+            "inStock": true,
+            "stockCount": 32,
+            "rating": 5,
+            "reviewCount": 142,
+            "featured": true,
+            "isBestseller": true,
+            "organicCertified": true,
+            "image": "https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg",
+            "gallery": [
+              "https://www.cookwithkushi.com/wp-content/uploads/2022/10/best_homemade_traditional_desi_ghee.jpg"
+            ],
+            "badge": "প্রিমিয়াম কোয়ালিটি",
+            "sourceLocation": "সাঁথিয়া, পাবনা",
+            "nutritionalHighlights": [
+              "ঘাস খাওয়া দেশি গরুর দুধের মাখন",
+              "শতভাগ প্রাকৃতিক দানাদার টেক্সচার",
+              "ভিটামিন এ, ডি, ই এবং কে সমৃদ্ধ",
+              "হজমশক্তি ও রোগ প্রতিরোধ ক্ষমতা বৃদ্ধি করে"
+            ]
+          },
+          "quantity": 2
+        },
+        {
+          "product": {
+            "id": "gb-3",
+            "slug": "sundarbans-wild-honey-500g",
+            "nameBn": "সুন্দরবনের প্রাকৃতিক খলিশা ফুলের মধু – ৫০০ গ্রাম",
+            "nameEn": "Raw Sundarbans Khilisha Flower Honey – 500g",
+            "category": "honey",
+            "categoryNameBn": "প্রাকৃতিক মধু",
+            "shortDescBn": "সুন্দরবনের গহিন জঙ্গল থেকে মৌয়ালদের সংগৃহীত অপরিশোধিত কাঁচা মধু। কোনো চিনি বা কৃত্রিম প্রক্রিয়াজাতকরণ ছাড়া।",
+            "fullDescBn": "সুন্দরবনের গভীর ম্যানগ্রোভ অরণ্য থেকে মৌয়ালদের মাধ্যমে সরাসরি সংগৃহীত ১০০% বিশুদ্ধ ও কাঁচা মধু। কোনো তাপ প্রয়োগ বা প্রক্রিয়াজাতকরণ ছাড়াই ফিল্টার করে বোতলজাত করা হয়, যার ফলে মধুর প্রাকৃতিক এনজাইম, পরাগরেণু ও ঔষধি গুণাগুণ পুরোপুরি সংরক্ষিত থাকে। এর অনন্য প্রাকৃতিক সুবাস ও হালকা পাতলা ঘনত্বই আসল বুনো মধুর পরিচয়।",
+            "price": 750,
+            "originalPrice": 850,
+            "discountPercent": 12,
+            "unit": "৫০০ গ্রাম কাঁচের জার",
+            "inStock": true,
+            "stockCount": 28,
+            "rating": 4.8,
+            "reviewCount": 96,
+            "featured": true,
+            "isBestseller": true,
+            "organicCertified": true,
+            "image": "https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75",
+            "gallery": [
+              "https://www.purehaat.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fphunipro%2Fimage%2Fupload%2Fv1772265231%2Fsn9yq7dd9l9-1772265231077-images-Swadeshii-Honey-Modhu-Product-Sorisha-2-removebg-preview.png&w=1200&q=75"
+            ],
+            "badge": "১০০% কাঁচা মধু",
+            "sourceLocation": "শ্যামনগর, সুন্দরবন অঞ্চল",
+            "nutritionalHighlights": [
+              "অশোধিত ও আনপাস্তুরিত কাঁচা মধু",
+              "প্রাকৃতিক অ্যান্টিঅক্সিডেন্ট ও অ্যান্টিব্যাকটেরিয়াল গুণ",
+              "পরাগরেণু ও জীবন্ত এনজাইম অক্ষুণ্ণ",
+              "কাশি ও ঠান্ডা নিরাময়ে অত্যন্ত কার্যকর"
+            ]
+          },
+          "quantity": 2
+        }
+      ],
+      "subtotal": 3400,
+      "deliveryFee": 0,
+      "discount": 200,
+      "total": 3200,
+      "status": "Delivered",
+      "orderDate": "২৪ নভেম্বর, ২০২৬"
+    }
+  ],
+  "customers": [
+    {
+      "id": "cust-1",
+      "name": "মোঃ রাকিবুল হাসান",
+      "phone": "01711234567",
+      "email": "rakibul.h@gmail.com",
+      "city": "ঢাকা মেট্রো",
+      "address": "বাড়ি #১৫, রোড #৪, ধানমন্ডি",
+      "totalOrders": 4,
+      "totalSpent": 6540,
+      "lastOrderDate": "২৬ নভেম্বর, ২০২৬"
+    },
+    {
+      "id": "cust-2",
+      "name": "প্রফেসর ড. মোজাম্মেল হক",
+      "phone": "01715554321",
+      "email": "mojammel.raj@edu.bd",
+      "city": "রাজশাহী",
+      "address": "সেক্টর-৩, উপশহর, বোয়ালিয়া",
+      "totalOrders": 6,
+      "totalSpent": 12450,
+      "lastOrderDate": "২৪ নভেম্বর, ২০২৬"
+    },
+    {
+      "id": "cust-3",
+      "name": "ফাহমিদা আক্তার",
+      "phone": "01819876543",
+      "email": "fahmida.akt@yahoo.com",
+      "city": "ঢাকা মেট্রো",
+      "address": "ব্লক-সি, রোড #১১, বনানী",
+      "totalOrders": 3,
+      "totalSpent": 4890,
+      "lastOrderDate": "২৬ নভেম্বর, ২০২৬"
+    }
+  ],
+  "coupons": [
+    {
+      "id": "cpn-1",
+      "code": "GRAMBANGLA10",
+      "discountPercent": 10,
+      "minOrderAmount": 1000,
+      "usageCount": 42,
+      "isActive": true,
+      "expiryDate": "৩১ ডিসেম্বর, ২০২৬"
+    },
+    {
+      "id": "cpn-2",
+      "code": "DESHI15",
+      "discountPercent": 15,
+      "minOrderAmount": 2500,
+      "usageCount": 18,
+      "isActive": true,
+      "expiryDate": "১৫ জানুয়ারি, ২০২৭"
+    },
+    {
+      "id": "cpn-3",
+      "code": "WELCOME5",
+      "discountPercent": 5,
+      "minOrderAmount": 500,
+      "usageCount": 89,
+      "isActive": true,
+      "expiryDate": "অব্যাহত (Ongoing)"
+    }
+  ],
+  "settings": {
+    "storeName": "গ্রামবাংলা (GramBangla)",
+    "hotline": "01700-123456",
+    "whatsapp": "01700-123456",
+    "email": "support@গ্রামবাংলা.com",
+    "address": "হাউজ #৪২, রোড #১১, ধানমন্ডি, ঢাকা - ১২০৯",
+    "deliveryDhaka": 70,
+    "deliveryOutside": 130,
+    "freeShippingThreshold": 2000,
+    "metaPixelId": "",
+    "isStoreOpen": true,
+    "announcementText": "শীতের সেরা অফার: খেজুরের খাঁটি নলেন গুড় ও সিরাজগঞ্জের সরিষার তেলে আকর্ষণীয় ছাড়!"
+  },
+  "messages": [],
+  "subscribers": []
+}

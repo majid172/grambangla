@@ -1,0 +1,13 @@
+{
+  "name": "grambangla-root",
+  "version": "1.0.0",
+  "description": "GramBangla (গ্রামবাংলা) Organic Food E-commerce & Express API",
+  "private": true,
+  "scripts": {
+    "dev:backend": "npm --prefix backend run dev",
+    "dev:frontend": "npm --prefix myapp run dev",
+    "build:backend": "npm --prefix backend run build",
+    "build:frontend": "npm --prefix myapp run build",
+    "seed:supabase": "npm --prefix backend run db:seed"
+  }
+}

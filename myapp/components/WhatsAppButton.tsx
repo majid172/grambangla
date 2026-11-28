@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import { MessageCircle, X, Send, Leaf } from 'lucide-react';
@@ -11,7 +11,7 @@ export default function WhatsAppButton() {
   const handleSend = (e: React.FormEvent) => {
     e.preventDefault();
     trackContact('whatsapp', 'floating_widget');
-    const encoded = encodeURIComponent(message || 'হ্যালো শিকড়, আমি কিছু তথ্য জানতে চাচ্ছি।');
+    const encoded = encodeURIComponent(message || 'হ্যালো গ্রামবাংলা, আমি কিছু তথ্য জানতে চাচ্ছি।');
     window.open(`https://wa.me/8801312617206?text=${encoded}`, '_blank');
     setMessage('');
     setIsOpen(false);
@@ -28,7 +28,7 @@ export default function WhatsAppButton() {
                 <Leaf className="w-5 h-5" />
               </div>
               <div>
-                <h4 className="font-semibold text-sm">শিকড় কাস্টমার কেয়ার</h4>
+                <h4 className="font-semibold text-sm">গ্রামবাংলা কাস্টমার কেয়ার</h4>
                 <div className="flex items-center gap-1.5 text-xs text-emerald-200">
                   <span className="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
                   অনলাইন আছেন (সকাল ৯টা - রাত ১০টা)
@@ -46,7 +46,7 @@ export default function WhatsAppButton() {
 
           <div className="p-4 bg-[#FAF8F0] space-y-3 max-h-60 overflow-y-auto text-xs">
             <div className="bg-white p-3 rounded-2xl rounded-tl-none shadow-sm text-gray-700 border border-gray-100">
-              আসসালামু আলাইকুম! খাঁটি খাবারের শিকড়য় আপনাকে স্বাগতম। সরিষার তেল, ঘি বা অর্ডার নিয়ে কোনো প্রশ্ন থাকলে এখানে লিখুন।
+              আসসালামু আলাইকুম! খাঁটি খাবারের গ্রামবাংলায় আপনাকে স্বাগতম। সরিষার তেল, ঘি বা অর্ডার নিয়ে কোনো প্রশ্ন থাকলে এখানে লিখুন।
             </div>
             <div className="bg-emerald-50 text-emerald-800 p-2 rounded-xl text-center font-medium border border-emerald-100">
               দ্রুত রিপ্লাই পেতে সরাসরি হোয়াটসঅ্যাপে যুক্ত হোন
@@ -87,3 +87,4 @@ export default function WhatsAppButton() {
     </div>
   );
 }
+

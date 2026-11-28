@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { ShoppingBag, Sparkles, Tag, ArrowRight } from 'lucide-react';
@@ -38,12 +38,12 @@ export default function PromoBanner() {
                   <Tag className="w-4 h-4 text-[#E5B83F]" />
                   <span>কুপন কোড:</span>
                   <code className="font-mono font-bold text-[#E5B83F] bg-white/10 px-2 py-0.5 rounded">
-                    Shikor10
+                    GRAMBANGLA10
                   </code>
                 </div>
 
                 <button
-                  onClick={() => applyCoupon('Shikor10')}
+                  onClick={() => applyCoupon('GRAMBANGLA10')}
                   className="text-xs bg-[#E5B83F]/20 hover:bg-[#E5B83F] text-[#FAF8F0] hover:text-[#244C32] font-semibold px-3 py-2 rounded-xl transition-colors border border-[#E5B83F]/40"
                 >
                   কুপন প্রয়োগ করুন
@@ -73,3 +73,4 @@ export default function PromoBanner() {
     </section>
   );
 }
+

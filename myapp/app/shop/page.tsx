@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
@@ -127,7 +127,7 @@ function ShopContent() {
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
               <div>
                 <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold tracking-tight">
-                  শিকড় সকল পণ্য ও খাঁটি সমাহার
+                  গ্রামবাংলা সকল পণ্য ও খাঁটি সমাহার
                 </h1>
                 <p className="text-xs sm:text-sm text-gray-200 mt-1 max-w-2xl">
                   সিরাজগঞ্জের ঘানিভাঙা সরিষার তেল, পাবনার খাঁটি গাওয়া ঘি, সুন্দরবনের মধু ও শীতের খাঁটি খেজুরের গুড় সরাসরি কৃষকের গোলা থেকে।
@@ -649,3 +649,4 @@ export default function ShopPage() {
     </CartProvider>
   );
 }
+
