@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { useCart } from '@/context/CartContext';
 import { OrderDetails } from '@/types';
 import { trackPurchase } from '@/lib/fpixel';
+import { triggerTopProgress } from '@/components/TopProgressBar';
 import { 
   X, 
   Truck, 
@@ -49,6 +50,7 @@ export default function CheckoutModal() {
     if (!name || !phone || !address) return;
 
     setIsSubmitting(true);
+    triggerTopProgress(900);
 
     const randomNum = Math.floor(1000 + Math.random() * 9000);
     const newOrder: OrderDetails = {

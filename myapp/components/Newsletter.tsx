@@ -1,7 +1,8 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import { Mail, CheckCircle2, Send, Sparkles } from 'lucide-react';
+import { triggerTopProgress } from '@/components/TopProgressBar';
 
 export default function Newsletter() {
   const [email, setEmail] = useState('');
@@ -10,6 +11,7 @@ export default function Newsletter() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!email || !email.includes('@')) return;
+    triggerTopProgress(600);
     setSubscribed(true);
     setEmail('');
     setTimeout(() => {

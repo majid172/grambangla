@@ -1,8 +1,9 @@
-﻿'use client';
+'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
 import { Product, CartItem, OrderDetails } from '@/types';
 import { trackAddToCart } from '@/lib/fpixel';
+import { triggerTopProgress } from '@/components/TopProgressBar';
 
 interface CartContextType {
   cart: CartItem[];
@@ -94,6 +95,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   };
 
   const addToCart = (product: Product, quantity = 1) => {
+    triggerTopProgress(400);
     // Meta Pixel Event
     trackAddToCart({
       id: product.id,
@@ -118,11 +120,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   };
 
   const removeFromCart = (productId: string) => {
+    triggerTopProgress(350);
     setCart((prev) => prev.filter((item) => item.product.id !== productId));
     showToast('পণ্যটি কার্ট থেকে সরানো হয়েছে');
   };
 
   const updateQuantity = (productId: string, quantity: number) => {
+    triggerTopProgress(300);
     if (quantity <= 0) {
       removeFromCart(productId);
       return;
@@ -135,11 +139,13 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   };
 
   const clearCart = () => {
+    triggerTopProgress(350);
     setCart([]);
     setAppliedCoupon(null);
   };
 
   const toggleWishlist = (product: Product) => {
+    triggerTopProgress(350);
     setWishlist((prev) => {
       const exists = prev.some((item) => item.id === product.id);
       if (exists) {
@@ -157,6 +163,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   };
 
   const applyCoupon = (code: string) => {
+    triggerTopProgress(400);
     const cleaned = code.trim().toUpperCase();
     if (cleaned === 'GRAMBANGLA10' || cleaned === 'GB10') {
       setAppliedCoupon({ code: cleaned, discountPercent: 10 });
@@ -173,6 +180,7 @@ export function CartProvider({ children }: { children: React.ReactNode }) {
   };
 
   const removeCoupon = () => {
+    triggerTopProgress(300);
     setAppliedCoupon(null);
     showToast('কুপন কোড বাতিল করা হয়েছে');
   };

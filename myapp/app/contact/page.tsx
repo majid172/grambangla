@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState } from 'react';
 import Link from 'next/link';
@@ -29,6 +29,7 @@ import {
   Sparkles,
   Building
 } from 'lucide-react';
+import { triggerTopProgress } from '@/components/TopProgressBar';
 
 function ContactContent() {
   const [formData, setFormData] = useState({
@@ -46,6 +47,7 @@ function ContactContent() {
     e.preventDefault();
     if (!formData.name || !formData.phone || !formData.message) return;
 
+    triggerTopProgress(800);
     setSubmitted(true);
     setTimeout(() => {
       setSubmitted(false);

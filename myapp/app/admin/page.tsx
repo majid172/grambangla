@@ -1,4 +1,4 @@
-﻿'use client';
+'use client';
 
 import React, { useState, useEffect, useMemo } from 'react';
 import Link from 'next/link';
@@ -17,6 +17,7 @@ import {
   AdminCoupon,
   StoreSettings
 } from '@/data/adminMockData';
+import { triggerTopProgress } from '@/components/TopProgressBar';
 import {
   LayoutDashboard,
   ShoppingBag,
@@ -153,6 +154,7 @@ export default function AdminPage() {
 
   // Handle Order Status Change
   const handleStatusChange = (orderId: string, newStatus: OrderDetails['status']) => {
+    triggerTopProgress(450);
     const updated = orders.map((ord) =>
       ord.orderId === orderId ? { ...ord, status: newStatus } : ord
     );
@@ -163,6 +165,7 @@ export default function AdminPage() {
   // Handle Delete Order
   const handleDeleteOrder = (orderId: string) => {
     if (confirm(`আপনি কি নিশ্চিতভাবে অর্ডার #${orderId} মুছে ফেলতে চান?`)) {
+      triggerTopProgress(450);
       const updated = orders.filter((o) => o.orderId !== orderId);
       updateOrdersState(updated);
       showToast(`অর্ডার #${orderId} মুছে ফেলা হয়েছে!`);
@@ -172,6 +175,7 @@ export default function AdminPage() {
   // Handle Save Settings
   const handleSaveSettings = (e: React.FormEvent) => {
     e.preventDefault();
+    triggerTopProgress(600);
     try {
       localStorage.setItem('gb_admin_settings', JSON.stringify(settings));
       showToast('স্টোর সেটিংস সফলভাবে সংরক্ষিত হয়েছে!');
@@ -184,6 +188,7 @@ export default function AdminPage() {
   const handleAddProduct = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newProdNameBn) return;
+    triggerTopProgress(600);
 
     const newSlug = newProdNameEn ? newProdNameEn.toLowerCase().replace(/\s+/g, '-') : `product-${Date.now()}`;
     const newProduct: Product = {
@@ -225,6 +230,7 @@ export default function AdminPage() {
   // Handle Delete Product
   const handleDeleteProduct = (productId: string) => {
     if (confirm('আপনি কি পণ্যটি ক্যাটালগ থেকে মুছে ফেলতে চান?')) {
+      triggerTopProgress(450);
       const updated = products.filter((p) => p.id !== productId);
       setProducts(updated);
       try {
@@ -236,6 +242,7 @@ export default function AdminPage() {
 
   // Handle Toggle Product Stock
   const handleToggleProductStock = (productId: string) => {
+    triggerTopProgress(350);
     const updated = products.map((p) =>
       p.id === productId ? { ...p, inStock: !p.inStock } : p
     );
@@ -247,6 +254,7 @@ export default function AdminPage() {
 
   // Handle Stock Count Change
   const handleUpdateStockCount = (productId: string, delta: number) => {
+    triggerTopProgress(300);
     const updated = products.map((p) =>
       p.id === productId ? { ...p, stockCount: Math.max(0, p.stockCount + delta) } : p
     );
@@ -260,6 +268,7 @@ export default function AdminPage() {
   const handleAddCoupon = (e: React.FormEvent) => {
     e.preventDefault();
     if (!newCpnCode) return;
+    triggerTopProgress(500);
 
     const newCoupon: AdminCoupon = {
       id: `cpn-${Date.now()}`,

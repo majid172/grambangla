@@ -1,6 +1,7 @@
-﻿import type { Metadata } from "next";
+import type { Metadata } from "next";
 import "./globals.css";
 import FacebookPixel from "@/components/FacebookPixel";
+import TopProgressBar from "@/components/TopProgressBar";
 
 export const metadata: Metadata = {
   title: "গ্রামবাংলা | খাঁটি খাবার, বাংলার স্বাদ - গ্রামবাংলা Organic Food",
@@ -34,6 +35,7 @@ export default function RootLayout({
         suppressHydrationWarning
         className="min-h-screen flex flex-col bg-[#FAF8F0] text-[#252B25] antialiased selection:bg-[#E5B83F]/30 selection:text-[#244C32]"
       >
+        <TopProgressBar />
         <FacebookPixel />
         {children}
       </body>
